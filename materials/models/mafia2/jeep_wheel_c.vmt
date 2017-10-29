@@ -1,0 +1,7 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/mafia2/jeep_wheel_c"
+	"$bumpmap" "models/mafia2/jeep_wheel_n"
+	"$rimlight" "1"
+	"$rimlightboost" "0.5"
+}
