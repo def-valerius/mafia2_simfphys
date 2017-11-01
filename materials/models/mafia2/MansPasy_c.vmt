@@ -1,0 +1,7 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/mafia2/MansPasy_c"
+	"$bumpmap" "models/mafia2/MansPasy_n"
+	"$alphatest" "1"
+	"vertexaplha" "1"
+}

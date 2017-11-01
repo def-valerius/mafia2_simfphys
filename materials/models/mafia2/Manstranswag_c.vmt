@@ -1,0 +1,5 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/mafia2/Manstranswag_c"
+	"$bumpmap" "models/mafia2/Manstranswag_n"
+}
