@@ -1,0 +1,6 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/mafia2/HankFuelTank_text"
+	//"$alphatest" 1
+	"$vertexalpha" 1
+}
