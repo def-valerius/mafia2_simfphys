@@ -1,0 +1,6 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/mafia2/Train_Hud_t"
+	"$bumpmap" "models/mafia2/Train_Hud_tn"
+	"$vertexalpha" 1
+}
