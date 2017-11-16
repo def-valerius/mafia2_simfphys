@@ -1,0 +1,5 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/mafia2/Bus_text"
+	"$vertexalpha" 1
+}
