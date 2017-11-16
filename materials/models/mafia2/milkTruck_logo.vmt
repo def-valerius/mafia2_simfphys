@@ -1,0 +1,5 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/mafia2/milkTruck_logo"
+	"$vertexalpha" 1
+}
