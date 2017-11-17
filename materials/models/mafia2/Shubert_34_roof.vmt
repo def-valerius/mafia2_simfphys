@@ -1,7 +1,6 @@
 "VertexlitGeneric"
 {
-	"$basetexture" "models/mafia2/milkTruck_logo"
-	"$vertexalpha" 1
+	"$basetexture" "models/mafia2/Shubert_34_roof"
 	"$colorfix" "{255 255 255}"
 	"Proxies"
 	{
