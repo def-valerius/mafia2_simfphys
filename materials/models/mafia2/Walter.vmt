@@ -1,5 +1,11 @@
 "VertexlitGeneric"
 {
+	//oh my... this is awesome but i'm too lazy
+	//"$detail" "models/mafia2/Walter_rs" 
+	//"$detailscale" "1"
+	//"$detailblendfactor" "2" 
+	//"$detailblendmode" "0"
+	//"$detailtint" "{0 0 255}"
 	"$basetexture" "models/mafia2/Walter"
 	"$bumpmap" "models/mafia2/Walter_n"
 	"$nocull" "1"	
