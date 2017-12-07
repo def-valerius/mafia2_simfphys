@@ -450,3 +450,154 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia2_JefProv", V )
+
+local V = {
+	Name = "Lassiter Series 69",
+	Model = "models/mafia2/lassiter_69.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia 2 40s",
+	SpawnOffset = Vector(0,0,20),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1873,
+		
+		EnginePos = Vector(60,0,20),
+		
+		LightsTable = "lassiter_69",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 1.5,
+		CustomWheelModel = "models/mafia2/dunniel_black_rook.mdl",
+		CustomWheelPosFL = Vector(73,34,0),
+		CustomWheelPosFR = Vector(73,-34,0),
+		CustomWheelPosRL = Vector(-58,34,2),
+		CustomWheelPosRR = Vector(-58,-34,2),
+		CustomWheelAngleOffset = Angle(0,270,0),
+		
+		CustomMassCenter = Vector(10,0,5),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(6,-15,40),
+		SeatPitch = -4,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(12,-15,8),
+				ang = Angle(0,-90,17)
+			},
+			{
+				pos = Vector(-27,-15,5),
+				ang = Angle(0,-90,17)
+			},
+			{
+				pos = Vector(-27,15,5),
+				ang = Angle(0,-90,17)
+			}
+		
+		},
+		
+		ExhaustPositions = {
+						{
+				pos = Vector(-104,12,2),
+				ang = Angle(90,165,0),
+				OnBodyGroups = { 
+					[7] = {0},
+				}
+			},
+			{
+				pos = Vector(-28,-36,-2),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-31,-36,-2),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-28,36,-2),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-31,36,-2),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 24000,
+		FrontDamping = 1000,
+		FrontRelativeDamping = 800,
+		
+		RearHeight = 8,
+		RearConstant = 24000,
+		RearDamping = 1000,
+		RearRelativeDamping = 800,
+		
+		FastSteeringAngle = 30,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 1.2,
+		
+		MaxGrip = 44,
+		Efficiency = 1,
+		GripOffset = 1.5,
+		BrakePower = 26,
+		
+		IdleRPM = 700,
+		LimitRPM = 4900,
+		PeakTorque = 160,
+		PowerbandStart = 900,
+		PowerbandEnd = 4700,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-83,39,23),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 70,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+
+		
+		Sound_Idle = "mafia2/V8_normal4_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia2/V8_normal4_1.wav",
+		Sound_MidPitch = 1.2,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 80,
+		Sound_MidFadeOutRate = 0.5,
+		
+		Sound_High = "mafia2/V8_normal4_2.wav",
+		Sound_HighPitch = 1.2,
+		Sound_HighVolume = 1.5,
+		Sound_HighFadeInRPMpercent = 80,
+		Sound_HighFadeInRate = 0.5,
+		
+		Sound_Throttle = "mafia2/V8_normal4_4.wav",
+		Sound_ThrottlePitch = 1.2,
+		Sound_ThrottleVolume = 1,
+		
+		--
+		snd_horn = "mafia2/A_klax_Lassiter69_l.wav",
+		
+		DifferentialGear = 0.55,
+		Gears = {-0.12,0,0.1,0.19,0.28,0.45,}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia2_lassiter_69", V )
