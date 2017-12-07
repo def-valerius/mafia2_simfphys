@@ -328,22 +328,22 @@ local V = {
 		
 		CustomSteerAngle = 30,
 		
-		SeatOffset = Vector(-1,-13,40),
+		SeatOffset = Vector(-2,-13,36),
 		SeatPitch = -4,
 		SeatYaw = 90,
 		
 		PassengerSeats = {
 			{
-				pos = Vector(7,-15,8),
+				pos = Vector(5,-15,6),
 				ang = Angle(0,-90,17)
 			},
 			{
-				pos = Vector(-35,-15,5),
-				ang = Angle(0,-90,17)
+				pos = Vector(-31,-15,5),
+				ang = Angle(0,-90,12)
 			},
 			{
-				pos = Vector(-35,15,5),
-				ang = Angle(0,-90,17)
+				pos = Vector(-31,15,5),
+				ang = Angle(0,-90,12)
 			}
 		
 		},
