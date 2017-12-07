@@ -353,35 +353,35 @@ local V = {
 				pos = Vector(-98,12,2),
 				ang = Angle(90,165,0),
 				OnBodyGroups = { 
-					[7] = {0},
+					[8] = {0},
 				}
 			},
 			{
-				pos = Vector(-30,-36,0),
+				pos = Vector(-30,-36,-2),
 				ang = Angle(90,-125,0),
 				OnBodyGroups = { 
-					[7] = {1},
+					[8] = {1},
 				}
 			},
 			{
-				pos = Vector(-33,-36,0),
+				pos = Vector(-33,-36,-2),
 				ang = Angle(90,-125,0),
 				OnBodyGroups = { 
-					[7] = {1},
+					[8] = {1},
 				}
 			},
 			{
-				pos = Vector(-30,36,0),
+				pos = Vector(-30,36,-2),
 				ang = Angle(90,125,0),
 				OnBodyGroups = { 
-					[7] = {1},
+					[8] = {1},
 				}
 			},
 			{
-				pos = Vector(-33,36,0),
+				pos = Vector(-33,36,-2),
 				ang = Angle(90,125,0),
 				OnBodyGroups = { 
-					[7] = {1},
+					[8] = {1},
 				}
 			}
 		},
@@ -414,7 +414,7 @@ local V = {
 		Turbocharged = false,
 		Supercharged = false,
 		
-		FuelFillPos = Vector(-75,34,26),
+		FuelFillPos = Vector(-59,37,24),
 		FuelType = FUELTYPE_PETROL,
 		FuelTankSize = 70,
 		
