@@ -1776,3 +1776,147 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia2_walter_coupe", V )
+
+local V = {
+	Name = "Shubert Pickup",
+	Model = "models/mafia2/shubert_pickup.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia 2 40s",
+	SpawnOffset = Vector(0,0,20),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1620,
+		
+		EnginePos = Vector(60,0,30),
+		
+		LightsTable = "shubert_pickup",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 1.5,
+		CustomWheelModel = "models/mafia2/speedstone_top_speed.mdl",
+		CustomWheelPosFL = Vector(69,35,2),
+		CustomWheelPosFR = Vector(69,-32,2),
+		CustomWheelPosRL = Vector(-65,35,4),
+		CustomWheelPosRR = Vector(-65,-32,4),
+		CustomWheelAngleOffset = Angle(0,270,0),
+		
+		CustomMassCenter = Vector(10,0,5),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-2,-15,50),
+		SeatPitch = -4,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(4,-12,18),
+				ang = Angle(0,-90,17)
+			}
+		
+		},
+		
+		ExhaustPositions = {
+						{
+				pos = Vector(-44,38,3),
+				ang = Angle(90,130,0),
+				OnBodyGroups = { 
+					[8] = {0},
+				}
+			},
+			{
+				pos = Vector(-23,-30,69),
+				ang = Angle(45,-180,0),
+				OnBodyGroups = { 
+					[8] = {1},
+				}
+			},
+			{
+				pos = Vector(-23,-30,65),
+				ang = Angle(45,-180,0),
+				OnBodyGroups = { 
+					[8] = {1},
+				}
+			},
+			{
+				pos = Vector(-23,30,69),
+				ang = Angle(45,180,0),
+				OnBodyGroups = { 
+					[8] = {1},
+				}
+			},
+			{
+				pos = Vector(-23,30,65),
+				ang = Angle(45,180,0),
+				OnBodyGroups = { 
+					[8] = {1},
+				}
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 24000,
+		FrontDamping = 1000,
+		FrontRelativeDamping = 800,
+		
+		RearHeight = 8,
+		RearConstant = 24000,
+		RearDamping = 1000,
+		RearRelativeDamping = 800,
+		
+		FastSteeringAngle = 30,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 1.2,
+		
+		MaxGrip = 37,
+		Efficiency = 1,
+		GripOffset = 1.5,
+		BrakePower = 18,
+		
+		IdleRPM = 700,
+		LimitRPM = 4400,
+		PeakTorque = 110,
+		PowerbandStart = 800,
+		PowerbandEnd = 4200,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-15,35,31),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 60,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+
+		
+		Sound_Idle = "mafia2/V6_40_normal1_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia2/V6_40_normal1_1.wav",
+		Sound_MidPitch = 1.2,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 80,
+		Sound_MidFadeOutRate = 0.5,
+		
+		Sound_High = "mafia2/V6_40_normal1_2.wav",
+		Sound_HighPitch = 1.4,
+		Sound_HighPitch = 1.4,
+		Sound_HighVolume = 1.5,
+		Sound_HighFadeInRPMpercent = 80,
+		Sound_HighFadeInRate = 0.5,
+		
+		Sound_Throttle = "mafia2/V6_40_normal1_3.wav",
+		Sound_ThrottlePitch = 1.6,
+		Sound_ThrottleVolume = 1,
+		
+		--
+		snd_horn = "mafia2/A_klax_ShubPickup_l.wav",
+		
+		DifferentialGear = 0.59,
+		Gears = {-0.12,0,0.1,0.24,0.41}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia2_shubert_pickup", V )
