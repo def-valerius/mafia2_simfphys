@@ -806,35 +806,35 @@ local V = {
 				pos = Vector(-92,17,5),
 				ang = Angle(90,165,0),
 				OnBodyGroups = { 
-					[8] = {0},
+					[9] = {0},
 				}
 			},
 			{
 				pos = Vector(-25,-36,-2),
 				ang = Angle(90,-125,0),
 				OnBodyGroups = { 
-					[8] = {1},
+					[9] = {1},
 				}
 			},
 			{
 				pos = Vector(-27,-36,-2),
 				ang = Angle(90,-125,0),
 				OnBodyGroups = { 
-					[8] = {1},
+					[9] = {1},
 				}
 			},
 			{
 				pos = Vector(-25,36,-2),
 				ang = Angle(90,125,0),
 				OnBodyGroups = { 
-					[8] = {1},
+					[9] = {1},
 				}
 			},
 			{
 				pos = Vector(-27,36,-2),
 				ang = Angle(90,125,0),
 				OnBodyGroups = { 
-					[8] = {1},
+					[9] = {1},
 				}
 			}
 		},
@@ -903,3 +903,438 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia2_shubert_taxi", V )
+
+local V = {
+	Name = "Shubert 38 Hearse",
+	Model = "models/mafia2/shubert_hearse.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia 2 40s",
+	SpawnOffset = Vector(0,0,20),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1631,
+		
+		EnginePos = Vector(60,0,20),
+		
+		LightsTable = "shubert_hearse",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 1.5,
+		CustomWheelModel = "models/mafia2/speedstone_top_speed.mdl",
+		CustomWheelPosFL = Vector(70,31,6),
+		CustomWheelPosFR = Vector(70,-31,6),
+		CustomWheelPosRL = Vector(-77,31,8),
+		CustomWheelPosRR = Vector(-77,-31,8),
+		CustomWheelAngleOffset = Angle(0,270,0),
+		
+		CustomMassCenter = Vector(10,0,5),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-4,-12,50),
+		SeatPitch = -4,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(4,-12,18),
+				ang = Angle(0,-90,17)
+			}
+		},
+		
+		ExhaustPositions = {
+						{
+				pos = Vector(-92,17,5),
+				ang = Angle(90,165,0),
+				OnBodyGroups = { 
+					[7] = {0},
+				}
+			},
+			{
+				pos = Vector(46,-21,40),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(42,-21,40),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(46,21,40),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(42,21,40),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 24000,
+		FrontDamping = 1000,
+		FrontRelativeDamping = 800,
+		
+		RearHeight = 8,
+		RearConstant = 24000,
+		RearDamping = 1000,
+		RearRelativeDamping = 800,
+		
+		FastSteeringAngle = 30,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 1.2,
+		
+		MaxGrip = 44,
+		Efficiency = 1,
+		GripOffset = 1.5,
+		BrakePower = 26,
+		
+		IdleRPM = 700,
+		LimitRPM = 4400,
+		PeakTorque = 95,
+		PowerbandStart = 900,
+		PowerbandEnd = 4200,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-85,31,31),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 70,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+
+		
+		Sound_Idle = "mafia2/V6_40_normal_0.wav",
+		Sound_IdlePitch = 1.2,
+		
+		Sound_Mid = "mafia2/V6_40_normal_1.wav",
+		Sound_MidPitch = 1.4,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 80,
+		Sound_MidFadeOutRate = 0.5,
+		
+		Sound_High = "mafia2/V6_40_normal_2.wav",
+		Sound_HighPitch = 1.4,
+		Sound_HighVolume = 1.5,
+		Sound_HighFadeInRPMpercent = 80,
+		Sound_HighFadeInRate = 0.5,
+		
+		Sound_Throttle = "mafia2/V6_40_normal_3.wav",
+		Sound_ThrottlePitch = 1.2,
+		Sound_ThrottleVolume = 1,
+		
+		--
+		snd_horn = "mafia2/A_klax_Shubert38_l.wav",
+		
+		DifferentialGear = 0.59,
+		Gears = {-0.12,0,0.1,0.24,0.41}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia2_shubert_hearse", V )
+
+local V = {
+	Name = "Shubert 38 Panel Truck",
+	Model = "models/mafia2/shubert_panel.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia 2 40s",
+	SpawnOffset = Vector(0,0,20),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1801,
+		
+		EnginePos = Vector(60,0,20),
+		
+		LightsTable = "shubert_panel",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 1.5,
+		CustomWheelModel = "models/mafia2/speedstone_top_speed.mdl",
+		CustomWheelPosFL = Vector(66,31,4),
+		CustomWheelPosFR = Vector(66,-31,4),
+		CustomWheelPosRL = Vector(-61,31,6),
+		CustomWheelPosRR = Vector(-61,-31,6),
+		CustomWheelAngleOffset = Angle(0,270,0),
+		
+		CustomMassCenter = Vector(10,0,5),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-8,-11,47),
+		SeatPitch = -4,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(-2,-12,14),
+				ang = Angle(0,-90,17)
+			}
+		},
+		
+		ExhaustPositions = {
+						{
+				pos = Vector(-92,17,1),
+				ang = Angle(90,165,0),
+				OnBodyGroups = { 
+					[6] = {0},
+				}
+			},
+			{
+				pos = Vector(49,-21,33),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[6] = {1},
+				}
+			},
+			{
+				pos = Vector(46,-21,33),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[6] = {1},
+				}
+			},
+			{
+				pos = Vector(49,21,33),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[6] = {1},
+				}
+			},
+			{
+				pos = Vector(46,21,33),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[6] = {1},
+				}
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 24000,
+		FrontDamping = 1000,
+		FrontRelativeDamping = 800,
+		
+		RearHeight = 8,
+		RearConstant = 24000,
+		RearDamping = 1000,
+		RearRelativeDamping = 800,
+		
+		FastSteeringAngle = 30,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 1.2,
+		
+		MaxGrip = 44,
+		Efficiency = 1,
+		GripOffset = 1.5,
+		BrakePower = 26,
+		
+		IdleRPM = 700,
+		LimitRPM = 4400,
+		PeakTorque = 95,
+		PowerbandStart = 900,
+		PowerbandEnd = 4200,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-65,33,27),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 70,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+
+		
+		Sound_Idle = "mafia2/V6_40_normal_0.wav",
+		Sound_IdlePitch = 1.2,
+		
+		Sound_Mid = "mafia2/V6_40_normal_1.wav",
+		Sound_MidPitch = 1.4,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 80,
+		Sound_MidFadeOutRate = 0.5,
+		
+		Sound_High = "mafia2/V6_40_normal_2.wav",
+		Sound_HighPitch = 1.4,
+		Sound_HighVolume = 1.5,
+		Sound_HighFadeInRPMpercent = 80,
+		Sound_HighFadeInRate = 0.5,
+		
+		Sound_Throttle = "mafia2/V6_40_normal_3.wav",
+		Sound_ThrottlePitch = 1.2,
+		Sound_ThrottleVolume = 1,
+		
+		--
+		snd_horn = "mafia2/A_klax_Shubert38_l.wav",
+		
+		DifferentialGear = 0.59,
+		Gears = {-0.12,0,0.1,0.24,0.41}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia2_shubert_panel", V )
+
+local V = {
+	Name = "Shubert Series AB",
+	Model = "models/mafia2/shubert_34.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia 2 40s",
+	SpawnOffset = Vector(0,0,20),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1170,
+		
+		EnginePos = Vector(50,0,30),
+		
+		LightsTable = "shubert_34",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 1.5,
+		CustomWheelModel = "models/mafia2/speedstone_top_speed.mdl",
+		CustomWheelPosFL = Vector(73,31,12),
+		CustomWheelPosFR = Vector(73,-31,12),
+		CustomWheelPosRL = Vector(-62,31,14),
+		CustomWheelPosRR = Vector(-62,-31,14),
+		CustomWheelAngleOffset = Angle(0,270,0),
+		
+		CustomMassCenter = Vector(10,0,5),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-7,-11,53),
+		SeatPitch = -4,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(-1,-12,18),
+				ang = Angle(0,-90,17)
+			},
+			{
+				pos = Vector(-36,-12,17),
+				ang = Angle(0,-90,17)
+			},
+			{
+				pos = Vector(-36,12,17),
+				ang = Angle(0,-90,17)
+			}
+		
+		},
+		
+		ExhaustPositions = {
+						{
+				pos = Vector(-96,15,8),
+				ang = Angle(90,165,0),
+				OnBodyGroups = { 
+					[8] = {0},
+				}
+			},
+			{
+				pos = Vector(-32,-36,3),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[8] = {1},
+				}
+			},
+			{
+				pos = Vector(-36,-36,3),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[8] = {1},
+				}
+			},
+			{
+				pos = Vector(-32,36,3),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[8] = {1},
+				}
+			},
+			{
+				pos = Vector(-36,36,3),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[8] = {1},
+				}
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 24000,
+		FrontDamping = 1000,
+		FrontRelativeDamping = 800,
+		
+		RearHeight = 8,
+		RearConstant = 24000,
+		RearDamping = 1000,
+		RearRelativeDamping = 800,
+		
+		FastSteeringAngle = 30,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 1.2,
+		
+		MaxGrip = 40,
+		Efficiency = 1,
+		GripOffset = 1.5,
+		BrakePower = 20,
+		
+		IdleRPM = 700,
+		LimitRPM = 4000,
+		PeakTorque = 85,
+		PowerbandStart = 800,
+		PowerbandEnd = 3800,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-72,31,39),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 60,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+
+		
+		Sound_Idle = "mafia2/V8_40_normal1_0b.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia2/V8_40_normal1_1b.wav",
+		Sound_MidPitch = 1.2,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 80,
+		Sound_MidFadeOutRate = 0.5,
+		
+		Sound_High = "mafia2/V8_40_normal1_1b.wav",
+		Sound_HighPitch = 1.4,
+		Sound_HighVolume = 1.5,
+		Sound_HighFadeInRPMpercent = 80,
+		Sound_HighFadeInRate = 0.5,
+		
+		Sound_Throttle = "mafia2/V8_40_normal1_2.wav",
+		Sound_ThrottlePitch = 1.6,
+		Sound_ThrottleVolume = 1,
+		
+		--
+		snd_horn = "mafia2/A_klax_Shub34_l.wav",
+		
+		DifferentialGear = 0.59,
+		Gears = {-0.12,0,0.1,0.24,0.41}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia2_shubert_34", V )
