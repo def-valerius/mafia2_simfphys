@@ -1632,3 +1632,147 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia2_smith_v8", V )
+
+local V = {
+	Name = "Walter Coupe",
+	Model = "models/mafia2/walter_coupe.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia 2 40s",
+	SpawnOffset = Vector(0,0,20),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 942,
+		
+		EnginePos = Vector(50,0,30),
+		
+		LightsTable = "walter_coupe",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 1.5,
+		CustomWheelModel = "models/mafia2/dunniel_spinner.mdl",
+		CustomWheelPosFL = Vector(63,27,8),
+		CustomWheelPosFR = Vector(63,-27,8),
+		CustomWheelPosRL = Vector(-48,26.5,10),
+		CustomWheelPosRR = Vector(-48,-26.5,10),
+		CustomWheelAngleOffset = Angle(0,270,0),
+		
+		CustomMassCenter = Vector(10,0,5),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-6,-11,43),
+		SeatPitch = -4,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(0,-12,10),
+				ang = Angle(0,-90,17)
+			}
+		
+		},
+		
+		ExhaustPositions = {
+						{
+				pos = Vector(-82,15,-2),
+				ang = Angle(90,165,0),
+				OnBodyGroups = { 
+					[8] = {0},
+				}
+			},
+			{
+				pos = Vector(-28,-31,-2),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[8] = {1},
+				}
+			},
+			{
+				pos = Vector(-32,-31,-2),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[8] = {1},
+				}
+			},
+			{
+				pos = Vector(-28,31,-2),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[8] = {1},
+				}
+			},
+			{
+				pos = Vector(-32,31,-2),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[8] = {1},
+				}
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 24000,
+		FrontDamping = 1000,
+		FrontRelativeDamping = 800,
+		
+		RearHeight = 8,
+		RearConstant = 24000,
+		RearDamping = 1000,
+		RearRelativeDamping = 800,
+		
+		FastSteeringAngle = 30,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 1.2,
+		
+		MaxGrip = 37,
+		Efficiency = 1,
+		GripOffset = 1.5,
+		BrakePower = 18,
+		
+		IdleRPM = 700,
+		LimitRPM = 3600,
+		PeakTorque = 70,
+		PowerbandStart = 800,
+		PowerbandEnd = 3400,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-60,30,27),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 60,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+
+		
+		Sound_Idle = "mafia2/V4_normal1_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia2/V4_normal1_d.wav",
+		Sound_MidPitch = 1.2,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 80,
+		Sound_MidFadeOutRate = 0.5,
+		
+		Sound_High = "mafia2/V4_normal1_1.wav",
+		Sound_HighPitch = 1.4,
+		Sound_HighPitch = 1.4,
+		Sound_HighVolume = 1.5,
+		Sound_HighFadeInRPMpercent = 80,
+		Sound_HighFadeInRate = 0.5,
+		
+		Sound_Throttle = "mafia2/V4_normal1_2.wav",
+		Sound_ThrottlePitch = 1.6,
+		Sound_ThrottleVolume = 1,
+		
+		--
+		snd_horn = "mafia2/A_klax_WalterCoupe_l.wav",
+		
+		DifferentialGear = 0.59,
+		Gears = {-0.12,0,0.1,0.24,0.41}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia2_walter_coupe", V )
