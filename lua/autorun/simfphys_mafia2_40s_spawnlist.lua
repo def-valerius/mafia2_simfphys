@@ -1338,3 +1338,297 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia2_shubert_34", V )
+
+local V = {
+	Name = "Smith Coupe",
+	Model = "models/mafia2/smith_coupe.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia 2 40s",
+	SpawnOffset = Vector(0,0,20),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1090,
+		
+		EnginePos = Vector(40,0,30),
+		
+		LightsTable = "smith_coupe",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 1.5,
+		CustomWheelModel = "models/mafia2/speedstone_top_speed.mdl",
+		CustomWheelPosFL = Vector(65,30,4),
+		CustomWheelPosFR = Vector(65,-30,4),
+		CustomWheelPosRL = Vector(-56,30,6),
+		CustomWheelPosRR = Vector(-56,-30,6),
+		CustomWheelAngleOffset = Angle(0,270,0),
+		
+		CustomMassCenter = Vector(10,0,5),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-12,-11,43),
+		SeatPitch = -4,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(-3,-12,12),
+				ang = Angle(0,-90,17)
+			}
+		
+		},
+		
+		ExhaustPositions = {
+						{
+				pos = Vector(-89,15,1),
+				ang = Angle(90,165,0),
+				OnBodyGroups = { 
+					[7] = {0},
+				}
+			},
+			{
+				pos = Vector(-28,-36,3),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-32,-36,3),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-28,36,3),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-32,36,3),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 24000,
+		FrontDamping = 1000,
+		FrontRelativeDamping = 800,
+		
+		RearHeight = 8,
+		RearConstant = 24000,
+		RearDamping = 1000,
+		RearRelativeDamping = 800,
+		
+		FastSteeringAngle = 30,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 1.2,
+		
+		MaxGrip = 38,
+		Efficiency = 1,
+		GripOffset = 1.5,
+		BrakePower = 19,
+		
+		IdleRPM = 700,
+		LimitRPM = 4000,
+		PeakTorque = 80,
+		PowerbandStart = 800,
+		PowerbandEnd = 3800,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-46,29,29),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 60,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+
+		
+		Sound_Idle = "mafia2/V6_40_normal1_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia2/V6_40_normal1_1.wav",
+		Sound_MidPitch = 1.2,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 80,
+		Sound_MidFadeOutRate = 0.5,
+		
+		Sound_High = "mafia2/V6_40_normal1_2.wav",
+		Sound_HighPitch = 1.4,
+		Sound_HighVolume = 1.5,
+		Sound_HighFadeInRPMpercent = 80,
+		Sound_HighFadeInRate = 0.5,
+		
+		Sound_Throttle = "mafia2/V6_40_normal1_3.wav",
+		Sound_ThrottlePitch = 1.6,
+		Sound_ThrottleVolume = 1,
+		
+		--
+		snd_horn = "mafia2/A_klax_WalterCoupe_l.wav",
+		
+		DifferentialGear = 0.59,
+		Gears = {-0.12,0,0.1,0.24,0.41}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia2_smith_coupe", V )
+
+local V = {
+	Name = "Smith V8",
+	Model = "models/mafia2/smith_v8.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia 2 40s",
+	SpawnOffset = Vector(0,0,20),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1166,
+		
+		EnginePos = Vector(50,0,30),
+		
+		LightsTable = "smith_V8",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 1.5,
+		CustomWheelModel = "models/mafia2/speedstone_top_speed.mdl",
+		CustomWheelPosFL = Vector(73,32,11),
+		CustomWheelPosFR = Vector(73,-32,11),
+		CustomWheelPosRL = Vector(-62,32,13),
+		CustomWheelPosRR = Vector(-62,-32,13),
+		CustomWheelAngleOffset = Angle(0,270,0),
+		
+		CustomMassCenter = Vector(10,0,5),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-7,-10,55),
+		SeatPitch = -4,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(1,-12,22),
+				ang = Angle(0,-90,17)
+			},
+			{
+				pos = Vector(-40,-12,20),
+				ang = Angle(0,-90,17)
+			},
+			{
+				pos = Vector(-40,12,20),
+				ang = Angle(0,-90,17)
+			}
+		
+		},
+		
+		ExhaustPositions = {
+						{
+				pos = Vector(-94,15,6),
+				ang = Angle(90,165,0),
+				OnBodyGroups = { 
+					[8] = {0},
+				}
+			},
+			{
+				pos = Vector(-32,-36,3),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[8] = {1},
+				}
+			},
+			{
+				pos = Vector(-36,-36,3),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[8] = {1},
+				}
+			},
+			{
+				pos = Vector(-32,36,3),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[8] = {1},
+				}
+			},
+			{
+				pos = Vector(-36,36,3),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[8] = {1},
+				}
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 24000,
+		FrontDamping = 1000,
+		FrontRelativeDamping = 800,
+		
+		RearHeight = 8,
+		RearConstant = 24000,
+		RearDamping = 1000,
+		RearRelativeDamping = 800,
+		
+		FastSteeringAngle = 30,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 1.2,
+		
+		MaxGrip = 38,
+		Efficiency = 1,
+		GripOffset = 1.5,
+		BrakePower = 19,
+		
+		IdleRPM = 700,
+		LimitRPM = 4200,
+		PeakTorque = 90,
+		PowerbandStart = 800,
+		PowerbandEnd = 4000,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-74,30,35),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 60,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+
+		
+		Sound_Idle = "mafia2/V8_40_normal1_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia2/V8_40_normal1_d.wav",
+		Sound_MidPitch = 1.2,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 80,
+		Sound_MidFadeOutRate = 0.5,
+		
+		Sound_High = "mafia2/V8_40_normal1_d.wav",
+		Sound_HighPitch = 1.4,
+		Sound_HighVolume = 1.5,
+		Sound_HighFadeInRPMpercent = 80,
+		Sound_HighFadeInRate = 0.5,
+		
+		Sound_Throttle = "mafia2/V8_40_normal1_2.wav",
+		Sound_ThrottlePitch = 1.6,
+		Sound_ThrottleVolume = 1,
+		
+		--
+		snd_horn = "mafia2/A_klax_SmithV8_2.wav",
+		
+		DifferentialGear = 0.59,
+		Gears = {-0.12,0,0.1,0.24,0.41}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia2_smith_v8", V )
