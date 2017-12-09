@@ -2156,3 +2156,299 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia2_sicily_military_truck", V )
+
+local V = {
+	Name = "Parry Bus",
+	Model = "models/mafia2/parry_bus.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia 2 40s",
+	SpawnOffset = Vector(0,0,20),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 3616,
+		
+		EnginePos = Vector(-190,0,30),
+		
+		LightsTable = "parry_bus",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 1.5,
+		CustomWheelModel = "models/mafia2/truck_f_wheel.mdl",
+		CustomWheelModel_R = "models/mafia2/truck_r_wheel.mdl",
+		CustomWheelPosFL = Vector(113,40,3),
+		CustomWheelPosFR = Vector(113,-40,3),
+		CustomWheelPosRL = Vector(-119,40,5),
+		CustomWheelPosRR = Vector(-119,-40,5),
+		CustomWheelAngleOffset = Angle(0,270,0),
+		
+		CustomMassCenter = Vector(10,0,5),
+		
+		CustomSteerAngle = 35,
+		
+		SeatOffset = Vector(143,-20,92),
+		SeatPitch = 10,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(127,28,28),
+				ang = Angle(0,180,10)
+			},
+			{
+				pos = Vector(102,28,28),
+				ang = Angle(0,180,10)
+			},
+			{
+				pos = Vector(127,-28,28),
+				ang = Angle(0,0,10)
+			},
+			{
+				pos = Vector(102,-28,28),
+				ang = Angle(0,0,10)
+			},
+			{
+				pos = Vector(60,35,28),
+				ang = Angle(0,-90,10)
+			},
+			{
+				pos = Vector(60,-35,28),
+				ang = Angle(0,-90,10)
+			},
+			{
+				pos = Vector(-170,-30,28),
+				ang = Angle(0,-90,10)
+			},
+			{
+				pos = Vector(-170,30,28),
+				ang = Angle(0,-90,10)
+			},
+			{
+				pos = Vector(-170,0,28),
+				ang = Angle(0,-90,10)
+			}
+		
+		},
+		
+		ExhaustPositions = {
+				{
+				pos = Vector(-195,-19,-1),
+				ang = Angle(90,180,0),
+				OnBodyGroups = { 
+					[8] = {0},
+				}
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 50000,
+		FrontDamping = 2000,
+		FrontRelativeDamping = 1000,
+		
+		RearHeight = 8,
+		RearConstant = 50000,
+		RearDamping = 2000,
+		RearRelativeDamping = 1000,
+		
+		FastSteeringAngle = 35,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 1,
+		
+		MaxGrip = 75,
+		Efficiency = 1,
+		GripOffset = 2,
+		BrakePower = 40,
+		
+		IdleRPM = 600,
+		LimitRPM = 3200,
+		PeakTorque = 160,
+		PowerbandStart = 700,
+		PowerbandEnd = 3000,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-198,-15,45),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 80,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+
+		
+		Sound_Idle = "mafia2/A_Parry_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia2/A_Parry_1.wav",
+		Sound_MidPitch = 1,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 80,
+		Sound_MidFadeOutRate = 0.5,
+		
+		Sound_High = "mafia2/A_Parry_2.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1.5,
+		Sound_HighFadeInRPMpercent = 80,
+		Sound_HighFadeInRate = 0.5,
+		
+		Sound_Throttle = "mafia2/A_Parry_3.wav",
+		Sound_ThrottlePitch = 1.1,
+		Sound_ThrottleVolume = 1,
+		
+		--
+		snd_horn = "mafia2/A_klax_Parry_l.wav",
+		
+		DifferentialGear = 0.53,
+		Gears = {-0.12,0,0.1,0.24,0.40}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia2_parry_bus", V )
+
+local V = {
+	Name = "Police Bus",
+	Model = "models/mafia2/parry_prison.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia 2 40s",
+	SpawnOffset = Vector(0,0,20),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 3616,
+		
+		EnginePos = Vector(-190,0,30),
+		
+		LightsTable = "parry_bus",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 1.5,
+		CustomWheelModel = "models/mafia2/truck_f_wheel.mdl",
+		CustomWheelModel_R = "models/mafia2/truck_r_wheel.mdl",
+		CustomWheelPosFL = Vector(113,40,3),
+		CustomWheelPosFR = Vector(113,-40,3),
+		CustomWheelPosRL = Vector(-119,40,5),
+		CustomWheelPosRR = Vector(-119,-40,5),
+		CustomWheelAngleOffset = Angle(0,270,0),
+		
+		CustomMassCenter = Vector(10,0,5),
+		
+		CustomSteerAngle = 35,
+		
+		SeatOffset = Vector(143,-20,92),
+		SeatPitch = 10,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(127,28,28),
+				ang = Angle(0,180,10)
+			},
+			{
+				pos = Vector(102,28,28),
+				ang = Angle(0,180,10)
+			},
+			{
+				pos = Vector(127,-28,28),
+				ang = Angle(0,0,10)
+			},
+			{
+				pos = Vector(102,-28,28),
+				ang = Angle(0,0,10)
+			},
+			{
+				pos = Vector(60,35,28),
+				ang = Angle(0,-90,10)
+			},
+			{
+				pos = Vector(60,-35,28),
+				ang = Angle(0,-90,10)
+			},
+			{
+				pos = Vector(-170,-30,28),
+				ang = Angle(0,-90,10)
+			},
+			{
+				pos = Vector(-170,30,28),
+				ang = Angle(0,-90,10)
+			},
+			{
+				pos = Vector(-170,0,28),
+				ang = Angle(0,-90,10)
+			}
+		
+		},
+		
+		ExhaustPositions = {
+				{
+				pos = Vector(-195,-19,-1),
+				ang = Angle(90,180,0),
+				OnBodyGroups = { 
+					[8] = {0},
+				}
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 50000,
+		FrontDamping = 2000,
+		FrontRelativeDamping = 1000,
+		
+		RearHeight = 8,
+		RearConstant = 50000,
+		RearDamping = 2000,
+		RearRelativeDamping = 1000,
+		
+		FastSteeringAngle = 35,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 1,
+		
+		MaxGrip = 75,
+		Efficiency = 1,
+		GripOffset = 2,
+		BrakePower = 40,
+		
+		IdleRPM = 600,
+		LimitRPM = 3200,
+		PeakTorque = 160,
+		PowerbandStart = 700,
+		PowerbandEnd = 3000,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-198,-15,45),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 80,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+
+		
+		Sound_Idle = "mafia2/A_Parry_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia2/A_Parry_1.wav",
+		Sound_MidPitch = 1,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 80,
+		Sound_MidFadeOutRate = 0.5,
+		
+		Sound_High = "mafia2/A_Parry_2.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1.5,
+		Sound_HighFadeInRPMpercent = 80,
+		Sound_HighFadeInRate = 0.5,
+		
+		Sound_Throttle = "mafia2/A_Parry_3.wav",
+		Sound_ThrottlePitch = 1.1,
+		Sound_ThrottleVolume = 1,
+		
+		--
+		snd_horn = "mafia2/A_klax_Parry_l.wav",
+		
+		DifferentialGear = 0.53,
+		Gears = {-0.12,0,0.1,0.24,0.40}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia2_parry_prison", V )
