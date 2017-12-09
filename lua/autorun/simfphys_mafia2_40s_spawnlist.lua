@@ -1920,3 +1920,122 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia2_shubert_pickup", V )
+
+local V = {
+	Name = "GAI 353 Military Truck",
+	Model = "models/mafia2/gai_353_military_truck.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia 2 40s",
+	SpawnOffset = Vector(0,0,20),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 5316,
+		
+		EnginePos = Vector(100,0,30),
+		
+		LightsTable = "gai_353_military_truck",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 1.5,
+		CustomWheelModel = "models/mafia2/truck_f_wheel.mdl",
+		CustomWheelModel_R = "models/mafia2/truck_r_wheel.mdl",
+		CustomWheelPosFL = Vector(106,35,8),
+		CustomWheelPosFR = Vector(106,-32,8),
+		CustomWheelPosML = Vector(-55,35,14),
+		CustomWheelPosMR = Vector(-55,-32,14),
+		CustomWheelPosRL = Vector(-105,35,14),
+		CustomWheelPosRR = Vector(-105,-32,14),
+		CustomWheelAngleOffset = Angle(0,270,0),
+		
+		CustomMassCenter = Vector(10,0,5),
+		
+		CustomSteerAngle = 35,
+		
+		SeatOffset = Vector(29,-12,73),
+		SeatPitch = 5,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(40,-12,35),
+				ang = Angle(0,-90,10)
+			}
+		
+		},
+		
+		ExhaustPositions = {
+						{
+				pos = Vector(-33,40,26),
+				ang = Angle(90,130,0),
+				OnBodyGroups = { 
+					[8] = {0},
+				}
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 50000,
+		FrontDamping = 2000,
+		FrontRelativeDamping = 1000,
+		
+		RearHeight = 8,
+		RearConstant = 50000,
+		RearDamping = 2000,
+		RearRelativeDamping = 1000,
+		
+		FastSteeringAngle = 35,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 1,
+		
+		MaxGrip = 75,
+		Efficiency = 1,
+		GripOffset = 2,
+		BrakePower = 40,
+		
+		IdleRPM = 600,
+		LimitRPM = 3200,
+		PeakTorque = 160,
+		PowerbandStart = 700,
+		PowerbandEnd = 3000,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-8,45,33),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 80,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+
+		
+		Sound_Idle = "mafia2/A_GAIMTruck_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia2/A_GAIMTruck_1.wav",
+		Sound_MidPitch = 2,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 80,
+		Sound_MidFadeOutRate = 0.5,
+		
+		Sound_High = "mafia2/A_GAIMTruck_2.wav",
+		Sound_HighPitch = 1.4,
+		Sound_HighPitch = 1.4,
+		Sound_HighVolume = 1.5,
+		Sound_HighFadeInRPMpercent = 80,
+		Sound_HighFadeInRate = 0.5,
+		
+		Sound_Throttle = "mafia2/A_GAIMTruck_3.wav",
+		Sound_ThrottlePitch = 1.6,
+		Sound_ThrottleVolume = 1,
+		
+		--
+		snd_horn = "mafia2/A_klax_ShubTruck_l.wav",
+		
+		DifferentialGear = 0.5,
+		Gears = {-0.12,0,0.1,0.24,0.40}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia2_gai_353_military_truck", V )
