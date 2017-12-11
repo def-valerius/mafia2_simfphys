@@ -718,3 +718,459 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia2_Lass75", V )
+
+local V = {
+	Name = "Potomac Indian",
+	Model = "models/mafia2/potomac_indian.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia 2 50s",
+	SpawnOffset = Vector(0,0,20),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1676,
+		
+		EnginePos = Vector(65,0,20),
+		
+		LightsTable = "potomac_indian",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 1.5,
+		
+		CustomWheelModel = "models/mafia2/speedstone_alpha.mdl",
+		CustomWheelPosFL = Vector(68,30,2),
+		CustomWheelPosFR = Vector(68,-30,2),
+		CustomWheelPosRL = Vector(-55,32,4),
+		CustomWheelPosRR = Vector(-55,-32,4),
+		CustomWheelAngleOffset = Angle(0,270,0),
+		
+		CustomMassCenter = Vector(10,0,5),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-1,-16,39),
+		SeatPitch = -4,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(6,-15,8),
+				ang = Angle(0,-90,17)
+			},
+			{
+				pos = Vector(-29,-15,5),
+				ang = Angle(0,-90,17)
+			},
+			{
+				pos = Vector(-29,15,5),
+				ang = Angle(0,-90,17)
+			}
+		
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-100,18,2),
+				ang = Angle(90,165,0),
+				OnBodyGroups = { 
+					[7] = {0},
+				}
+			},
+			{
+				pos = Vector(-25,-38,0),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-28,-38,0),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-25,38,0),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-28,38,0),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 24000,
+		FrontDamping = 1000,
+		FrontRelativeDamping = 800,
+		
+		RearHeight = 8,
+		RearConstant = 24000,
+		RearDamping = 1000,
+		RearRelativeDamping = 800,
+		
+		FastSteeringAngle = 30,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 1.2,
+		
+		MaxGrip = 42,
+		Efficiency = 1,
+		GripOffset = 1.5,
+		BrakePower = 25,
+		
+		IdleRPM = 700,
+		LimitRPM = 4800,
+		PeakTorque = 118,
+		PowerbandStart = 900,
+		PowerbandEnd = 4600,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-74,40,24),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 70,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+
+		
+		Sound_Idle = "mafia2/V8_normal3_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia2/V8_normal3_1.wav",
+		Sound_MidPitch = 1,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 80,
+		Sound_MidFadeOutRate = 0.5,
+		
+		Sound_High = "mafia2/V8_normal3_2.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1.5,
+		Sound_HighFadeInRPMpercent = 80,
+		Sound_HighFadeInRate = 0.5,
+		
+		Sound_Throttle = "mafia2/V8_normal3_3.wav",
+		Sound_ThrottlePitch = 1,
+		Sound_ThrottleVolume = 1,
+		
+		--
+		snd_horn = "mafia2/A_klax_Houston_l.wav",
+		
+		DifferentialGear = 0.5,
+		Gears = {-0.12,0,0.1,0.23,0.5}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia2_potomac_indian", V )
+
+local V = {
+	Name = "Quicksilver Windsor",
+	Model = "models/mafia2/quicksilver_windsor_pha.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia 2 50s",
+	SpawnOffset = Vector(0,0,20),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1620,
+		
+		EnginePos = Vector(65,0,20),
+		
+		LightsTable = "quicksilver_windsor_pha",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 1.5,
+		
+		CustomWheelModel = "models/mafia2/dunniel_spinner.mdl",
+		CustomWheelPosFL = Vector(72,33,3),
+		CustomWheelPosFR = Vector(72,-33,3),
+		CustomWheelPosRL = Vector(-48,29,5),
+		CustomWheelPosRR = Vector(-48,-29,5),
+		CustomWheelAngleOffset = Angle(0,270,0),
+		
+		CustomMassCenter = Vector(10,0,5),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(6,-16,41),
+		SeatPitch = -4,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(13,-15,8),
+				ang = Angle(0,-90,17)
+			},
+			{
+				pos = Vector(-26,-15,7),
+				ang = Angle(0,-90,17)
+			},
+			{
+				pos = Vector(-26,15,7),
+				ang = Angle(0,-90,17)
+			}
+		
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-96,14,2),
+				ang = Angle(90,165,0),
+				OnBodyGroups = { 
+					[7] = {0},
+				}
+			},
+			{
+				pos = Vector(-25,-38,0),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-28,-38,0),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-25,38,0),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-28,38,0),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 24000,
+		FrontDamping = 1000,
+		FrontRelativeDamping = 800,
+		
+		RearHeight = 8,
+		RearConstant = 24000,
+		RearDamping = 1000,
+		RearRelativeDamping = 800,
+		
+		FastSteeringAngle = 30,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 1.2,
+		
+		MaxGrip = 42,
+		Efficiency = 1,
+		GripOffset = 1.5,
+		BrakePower = 25,
+		
+		IdleRPM = 700,
+		LimitRPM = 4800,
+		PeakTorque = 120,
+		PowerbandStart = 900,
+		PowerbandEnd = 4600,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-79,28,28),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 78,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+
+		
+		Sound_Idle = "mafia2/V8_normal1_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia2/V8_normal1_1.wav",
+		Sound_MidPitch = 1.4,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 80,
+		Sound_MidFadeOutRate = 0.5,
+		
+		Sound_High = "mafia2/V8_normal1_2.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1.5,
+		Sound_HighFadeInRPMpercent = 80,
+		Sound_HighFadeInRate = 0.5,
+		
+		Sound_Throttle = "mafia2/V8_normal1_3.wav",
+		Sound_ThrottlePitch = 1,
+		Sound_ThrottleVolume = 1,
+		
+		--
+		snd_horn = "mafia2/A_klax_QWindsor_l.wav",
+		
+		DifferentialGear = 0.5,
+		Gears = {-0.12,0,0.1,0.235,0.51}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia2_quicksilver_windsor_pha", V )
+
+local V = {
+	Name = "Quicksilver Windsor Taxi",
+	Model = "models/mafia2/quicksilver_windsor_taxi_pha.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia 2 50s",
+	SpawnOffset = Vector(0,0,20),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1620,
+		
+		EnginePos = Vector(65,0,20),
+		
+		LightsTable = "quicksilver_windsor_taxi_pha",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 1.5,
+		
+		CustomWheelModel = "models/mafia2/dunniel_spinner.mdl",
+		CustomWheelPosFL = Vector(72,33,3),
+		CustomWheelPosFR = Vector(72,-33,3),
+		CustomWheelPosRL = Vector(-48,29,5),
+		CustomWheelPosRR = Vector(-48,-29,5),
+		CustomWheelAngleOffset = Angle(0,270,0),
+		
+		CustomMassCenter = Vector(10,0,5),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(6,-16,41),
+		SeatPitch = -4,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(13,-15,8),
+				ang = Angle(0,-90,17)
+			},
+			{
+				pos = Vector(-26,-15,7),
+				ang = Angle(0,-90,17)
+			},
+			{
+				pos = Vector(-26,15,7),
+				ang = Angle(0,-90,17)
+			}
+		
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-96,14,2),
+				ang = Angle(90,165,0),
+				OnBodyGroups = { 
+					[8] = {0},
+				}
+			},
+			{
+				pos = Vector(-25,-38,0),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[8] = {1},
+				}
+			},
+			{
+				pos = Vector(-28,-38,0),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[8] = {1},
+				}
+			},
+			{
+				pos = Vector(-25,38,0),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[8] = {1},
+				}
+			},
+			{
+				pos = Vector(-28,38,0),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[8] = {1},
+				}
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 24000,
+		FrontDamping = 1000,
+		FrontRelativeDamping = 800,
+		
+		RearHeight = 8,
+		RearConstant = 24000,
+		RearDamping = 1000,
+		RearRelativeDamping = 800,
+		
+		FastSteeringAngle = 30,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 1.2,
+		
+		MaxGrip = 42,
+		Efficiency = 1,
+		GripOffset = 1.5,
+		BrakePower = 25,
+		
+		IdleRPM = 700,
+		LimitRPM = 4800,
+		PeakTorque = 120,
+		PowerbandStart = 900,
+		PowerbandEnd = 4600,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-79,28,28),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 78,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+
+		
+		Sound_Idle = "mafia2/V8_normal1_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia2/V8_normal1_1.wav",
+		Sound_MidPitch = 1.4,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 80,
+		Sound_MidFadeOutRate = 0.5,
+		
+		Sound_High = "mafia2/V8_normal1_2.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1.5,
+		Sound_HighFadeInRPMpercent = 80,
+		Sound_HighFadeInRate = 0.5,
+		
+		Sound_Throttle = "mafia2/V8_normal1_3.wav",
+		Sound_ThrottlePitch = 1,
+		Sound_ThrottleVolume = 1,
+		
+		--
+		snd_horn = "mafia2/A_klax_QWindsor_l.wav",
+		
+		DifferentialGear = 0.5,
+		Gears = {-0.12,0,0.1,0.235,0.51}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia2_quicksilver_windsor_taxi_pha", V )
