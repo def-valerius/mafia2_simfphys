@@ -3181,3 +3181,153 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia2_hank_fueltank", V )
+
+local V = {
+	Name = "Shubert Armored Van",
+	Model = "models/mafia2/shubert_armoured.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia 2 50s",
+	SpawnOffset = Vector(0,0,20),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 4501,
+		
+		EnginePos = Vector(80,0,40),
+		
+		MaxHealth = 3200,
+		IsArmored = true,
+		
+		LightsTable = "shubert_armoured",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 1.5,
+		
+		CustomWheelModel = "models/mafia2/truck_f_wheel.mdl",
+		CustomWheelModel_R = "models/mafia2/truck_r_wheel.mdl",
+		CustomWheelPosFL = Vector(82,35,8),
+		CustomWheelPosFR = Vector(82,-35,8),
+		CustomWheelPosRL = Vector(-58,32,9),
+		CustomWheelPosRR = Vector(-58,-32,9),
+		CustomWheelAngleOffset = Angle(0,270,0),
+		
+		CustomMassCenter = Vector(10,0,2),
+		
+		CustomSteerAngle = 42,
+		
+		SeatOffset = Vector(8,-17,67),
+		SeatPitch = 10,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(20,-19,30),
+				ang = Angle(0,-90,5)
+			},
+			{
+				pos = Vector(-18,-27,27),
+				ang = Angle(0,0,5)
+			},
+			{
+				pos = Vector(-18,27,27),
+				ang = Angle(0,180,5)
+			},
+			{
+				pos = Vector(-42,-27,27),
+				ang = Angle(0,0,5)
+			},
+			{
+				pos = Vector(-42,27,27),
+				ang = Angle(0,180,5)
+			},
+			{
+				pos = Vector(-69,-27,27),
+				ang = Angle(0,0,5)
+			},
+			{
+				pos = Vector(-69,27,27),
+				ang = Angle(0,180,5)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-112,19,5),
+				ang = Angle(90,-180,0),
+				OnBodyGroups = { 
+					[8] = {0},
+				}
+			},
+			{
+				pos = Vector(-112,19,5),
+				ang = Angle(90,-180,0),
+				OnBodyGroups = { 
+					[8] = {0},
+				}
+			}
+		},
+		
+		StrengthenSuspension = true,
+		FrontHeight = 8,
+		FrontConstant = 50000,
+		FrontDamping = 2000,
+		FrontRelativeDamping = 800,
+		
+		RearHeight = 8,
+		RearConstant = 50000,
+		RearDamping = 2000,
+		RearRelativeDamping = 800,
+		
+		FastSteeringAngle = 38,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 1.1,
+		
+		MaxGrip = 120,
+		Efficiency = 1,
+		GripOffset = 1.5,
+		BrakePower = 60,
+		
+		IdleRPM = 500,
+		LimitRPM = 3900,
+		PeakTorque = 185,
+		PowerbandStart = 700,
+		PowerbandEnd = 3700,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-23,49,29),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 60,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+
+		
+		Sound_Idle = "mafia2/V8_40_normal2_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia2/V8_40_normal2_1b.wav",
+		Sound_MidPitch = 1.4,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 80,
+		Sound_MidFadeOutRate = 0.5,
+		
+		Sound_High = "mafia2/V8_40_normal2_2.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1.5,
+		Sound_HighFadeInRPMpercent = 80,
+		Sound_HighFadeInRate = 0.5,
+		
+		Sound_Throttle = "mafia2/V8_40_normal2_3.wav",
+		Sound_ThrottlePitch = 1,
+		Sound_ThrottleVolume = 1,
+		
+		snd_horn = "mafia2/A_klax_Hank_l.wav",
+		
+		DifferentialGear = 0.5,
+		Gears = {-0.12,0,0.1,0.2,0.39}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia2_shubert_armoured", V )
