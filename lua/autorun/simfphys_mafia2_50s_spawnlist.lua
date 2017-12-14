@@ -2636,3 +2636,119 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia2_milk_truck", V )
+
+local V = {
+	Name = "Shubert Pickup Hot Rod",
+	Model = "models/mafia2/hot_rod_3.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia 2 50s",
+	SpawnOffset = Vector(0,0,20),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1086,
+		
+		EnginePos = Vector(55,0,20),
+		
+		LightsTable = "hot_rod_3",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 1.5,
+		
+		CustomWheelModel = "models/mafia2/speedstone_top_speed.mdl",
+		CustomWheelPosFL = Vector(75,33,18),
+		CustomWheelPosFR = Vector(75,-33,18),
+		CustomWheelPosRL = Vector(-60,33,16),
+		CustomWheelPosRR = Vector(-60,-33,16),
+		CustomWheelAngleOffset = Angle(0,270,0),
+		
+		CustomMassCenter = Vector(10,0,5),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-10,-12,45),
+		SeatPitch = -4,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(-1,-12,13),
+				ang = Angle(0,-90,17)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(25,25,10),
+				ang = Angle(90,135,0)
+			},
+			{
+				pos = Vector(25,-25,10),
+				ang = Angle(90,-135,0)
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 30000,
+		FrontDamping = 1000,
+		FrontRelativeDamping = 800,
+		
+		RearHeight = 8,
+		RearConstant = 30000,
+		RearDamping = 1000,
+		RearRelativeDamping = 800,
+		
+		FastSteeringAngle = 30,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 1.6,
+		
+		MaxGrip = 42,
+		Efficiency = 1,
+		GripOffset = 1.5,
+		BrakePower = 25,
+		
+		IdleRPM = 700,
+		LimitRPM = 5600,
+		PeakTorque = 220,
+		PowerbandStart = 900,
+		PowerbandEnd = 5200,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-35,26,24),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 54,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+
+		
+		Sound_Idle = "mafia2/V8_hotrod1_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia2/V8_hotrod1_1.wav",
+		Sound_MidPitch = 1.4,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 80,
+		Sound_MidFadeOutRate = 0.5,
+		
+		Sound_High = "mafia2/V8_hotrod1_2.wav",
+		Sound_HighPitch = 1.1,
+		Sound_HighVolume = 1.5,
+		Sound_HighFadeInRPMpercent = 80,
+		Sound_HighFadeInRate = 0.5,
+		
+		Sound_Throttle = "mafia2/V8_hotrod1_3.wav",
+		Sound_ThrottlePitch = 1.2,
+		Sound_ThrottleVolume = 1,
+		
+		--
+		snd_horn = "mafia2/A_klax_generallee.wav",
+		
+		DifferentialGear = 0.55,
+		Gears = {-0.12,0,0.1,0.25,0.55}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia2_hot_rod_3", V )
