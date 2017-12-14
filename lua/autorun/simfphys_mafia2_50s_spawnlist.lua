@@ -2752,3 +2752,154 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia2_hot_rod_3", V )
+
+local V = {
+	Name = "Smith Deluxe Station Wagon",
+	Model = "models/mafia2/smith_wagon_pha.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia 2 50s",
+	SpawnOffset = Vector(0,0,20),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1485,
+		
+		EnginePos = Vector(60,0,20),
+		
+		LightsTable = "smith_wagon_pha",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 1.5,
+		
+		CustomWheelModel = "models/mafia2/speedstone_top_speed.mdl",
+		CustomWheelPosFL = Vector(58,30,2),
+		CustomWheelPosFR = Vector(58,-30,2),
+		CustomWheelPosRL = Vector(-55,31,4),
+		CustomWheelPosRR = Vector(-55,-31,4),
+		CustomWheelAngleOffset = Angle(0,270,0),
+		
+		CustomMassCenter = Vector(10,0,2),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-4,-12,41),
+		SeatPitch = -4,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(2,-12,9),
+				ang = Angle(0,-90,17)
+			},
+			{
+				pos = Vector(-37,-15,8),
+				ang = Angle(0,-90,12)
+			},
+			{
+				pos = Vector(-37,15,8),
+				ang = Angle(0,-90,12)
+			}
+		
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-90,-12,1),
+				ang = Angle(90,165,0),
+				OnBodyGroups = { 
+					[8] = {0},
+				}
+			},
+			{
+				pos = Vector(-32,-38,0),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[8] = {1},
+				}
+			},
+			{
+				pos = Vector(-36,-38,0),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[8] = {1},
+				}
+			},
+			{
+				pos = Vector(-32,38,0),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[8] = {1},
+				}
+			},
+			{
+				pos = Vector(-36,38,0),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[8] = {1},
+				}
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 25000,
+		FrontDamping = 1200,
+		FrontRelativeDamping = 800,
+		
+		RearHeight = 8,
+		RearConstant = 25000,
+		RearDamping = 1200,
+		RearRelativeDamping = 800,
+		
+		FastSteeringAngle = 30,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 1.2,
+		
+		MaxGrip = 45,
+		Efficiency = 1,
+		GripOffset = 1.5,
+		BrakePower = 25,
+		
+		IdleRPM = 700,
+		LimitRPM = 5300,
+		PeakTorque = 135,
+		PowerbandStart = 900,
+		PowerbandEnd = 5100,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-64,34,25),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 60,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+
+		
+		Sound_Idle = "mafia2/V6_40_normal1_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia2/V6_40_normal1_1.wav",
+		Sound_MidPitch = 1.4,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 80,
+		Sound_MidFadeOutRate = 0.5,
+		
+		Sound_High = "mafia2/V6_40_normal1_2.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1.5,
+		Sound_HighFadeInRPMpercent = 80,
+		Sound_HighFadeInRate = 0.5,
+		
+		Sound_Throttle = "mafia2/V6_40_normal1_3.wav",
+		Sound_ThrottlePitch = 1,
+		Sound_ThrottleVolume = 1,
+		
+		snd_horn = "mafia2/A_klax_SmithWagon_l.wav",
+		
+		DifferentialGear = 0.5,
+		Gears = {-0.12,0,0.1,0.23,0.45}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia2_smith_wagon_pha", V )
