@@ -1592,3 +1592,307 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia2_hot_rod_2", V )
+
+local V = {
+	Name = "Smith Custom 200",
+	Model = "models/mafia2/smith_200_pha.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia 2 50s",
+	SpawnOffset = Vector(0,0,20),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1500,
+		
+		EnginePos = Vector(70,0,20),
+		
+		LightsTable = "smith_200_pha",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 1.5,
+		
+		CustomWheelModel = "models/mafia2/galahad_silver_band.mdl",
+		CustomWheelPosFL = Vector(73,32,2),
+		CustomWheelPosFR = Vector(73,-32,2),
+		CustomWheelPosRL = Vector(-51,32,4),
+		CustomWheelPosRR = Vector(-51,-32,4),
+		CustomWheelAngleOffset = Angle(0,270,0),
+		
+		CustomMassCenter = Vector(10,0,5),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(10,-16,37),
+		SeatPitch = -4,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(16,-15,6),
+				ang = Angle(0,-90,17)
+			},
+			{
+				pos = Vector(-31,-15,5),
+				ang = Angle(0,-90,12)
+			},
+			{
+				pos = Vector(-31,15,5),
+				ang = Angle(0,-90,12)
+			}
+		
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-99,12,2),
+				ang = Angle(90,165,0),
+				OnBodyGroups = { 
+					[7] = {0},
+				}
+			},
+			{
+				pos = Vector(-25,-38,0),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-28,-38,0),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-25,38,0),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-28,38,0),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 24000,
+		FrontDamping = 1000,
+		FrontRelativeDamping = 800,
+		
+		RearHeight = 8,
+		RearConstant = 24000,
+		RearDamping = 1000,
+		RearRelativeDamping = 800,
+		
+		FastSteeringAngle = 30,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 1.2,
+		
+		MaxGrip = 42,
+		Efficiency = 1,
+		GripOffset = 1.5,
+		BrakePower = 25,
+		
+		IdleRPM = 700,
+		LimitRPM = 4900,
+		PeakTorque = 145,
+		PowerbandStart = 900,
+		PowerbandEnd = 4700,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-68,37,28),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 80,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+
+		
+		Sound_Idle = "mafia2/V8_normal2_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia2/V8_normal2_1.wav",
+		Sound_MidPitch = 1.4,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 80,
+		Sound_MidFadeOutRate = 0.5,
+		
+		Sound_High = "mafia2/V8_normal2_2.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1.5,
+		Sound_HighFadeInRPMpercent = 80,
+		Sound_HighFadeInRate = 0.5,
+		
+		Sound_Throttle = "mafia2/V8_normal2_3.wav",
+		Sound_ThrottlePitch = 1,
+		Sound_ThrottleVolume = 1,
+		
+		--
+		snd_horn = "mafia2/A_klax_Smith200_l.wav",
+		
+		DifferentialGear = 0.52,
+		Gears = {-0.12,0,0.1,0.25,0.55}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia2_smith_200_pha", V )
+
+local V = {
+	Name = "Smith Custom 200 Police Special",
+	Model = "models/mafia2/smith_200_p_pha.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia 2 50s",
+	SpawnOffset = Vector(0,0,20),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1500,
+		
+		EnginePos = Vector(70,0,20),
+		
+		LightsTable = "smith_200_p_pha",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 1.5,
+		
+		CustomWheelModel = "models/mafia2/galahad_silver_band.mdl",
+		CustomWheelPosFL = Vector(73,32,2),
+		CustomWheelPosFR = Vector(73,-32,2),
+		CustomWheelPosRL = Vector(-51,32,4),
+		CustomWheelPosRR = Vector(-51,-32,4),
+		CustomWheelAngleOffset = Angle(0,270,0),
+		
+		CustomMassCenter = Vector(10,0,5),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(10,-16,37),
+		SeatPitch = -4,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(16,-15,6),
+				ang = Angle(0,-90,17)
+			},
+			{
+				pos = Vector(-31,-15,5),
+				ang = Angle(0,-90,12)
+			},
+			{
+				pos = Vector(-31,15,5),
+				ang = Angle(0,-90,12)
+			}
+		
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-99,12,2),
+				ang = Angle(90,165,0),
+				OnBodyGroups = { 
+					[8] = {0},
+				}
+			},
+			{
+				pos = Vector(-25,-38,0),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[8] = {1},
+				}
+			},
+			{
+				pos = Vector(-28,-38,0),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[8] = {1},
+				}
+			},
+			{
+				pos = Vector(-25,38,0),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[8] = {1},
+				}
+			},
+			{
+				pos = Vector(-28,38,0),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[8] = {1},
+				}
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 24000,
+		FrontDamping = 1000,
+		FrontRelativeDamping = 800,
+		
+		RearHeight = 8,
+		RearConstant = 24000,
+		RearDamping = 1000,
+		RearRelativeDamping = 800,
+		
+		FastSteeringAngle = 30,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 1.2,
+		
+		MaxGrip = 48,
+		Efficiency = 1,
+		GripOffset = 1.5,
+		BrakePower = 28,
+		
+		IdleRPM = 700,
+		LimitRPM = 5000,
+		PeakTorque = 160,
+		PowerbandStart = 900,
+		PowerbandEnd = 4800,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-68,37,28),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 80,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+
+		
+		Sound_Idle = "mafia2/V8_normal2_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia2/V8_normal2_1.wav",
+		Sound_MidPitch = 1.4,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 80,
+		Sound_MidFadeOutRate = 0.5,
+		
+		Sound_High = "mafia2/V8_normal2_2.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1.5,
+		Sound_HighFadeInRPMpercent = 80,
+		Sound_HighFadeInRate = 0.5,
+		
+		Sound_Throttle = "mafia2/V8_normal2_3.wav",
+		Sound_ThrottlePitch = 1,
+		Sound_ThrottleVolume = 1,
+		
+		--
+		snd_horn = "mafia2/A_klax_Smith200_l.wav",
+		
+		DifferentialGear = 0.53,
+		Gears = {-0.12,0,0.1,0.25,0.57}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia2_smith_200_p_pha", V )
