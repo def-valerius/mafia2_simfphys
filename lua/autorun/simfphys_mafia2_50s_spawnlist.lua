@@ -2191,3 +2191,155 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia2_smith_stingray_pha", V )
+
+local V = {
+	Name = "Walker Rocket",
+	Model = "models/mafia2/walker_rocket.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia 2 50s",
+	SpawnOffset = Vector(0,0,20),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1920,
+		
+		EnginePos = Vector(70,0,20),
+		
+		LightsTable = "walker_rocket",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 1.5,
+		
+		CustomWheelModel = "models/mafia2/speedstone_alpha.mdl",
+		CustomWheelPosFL = Vector(71,32,2),
+		CustomWheelPosFR = Vector(71,-32,2),
+		CustomWheelPosRL = Vector(-62,32,4),
+		CustomWheelPosRR = Vector(-62,-32,4),
+		CustomWheelAngleOffset = Angle(0,270,0),
+		
+		CustomMassCenter = Vector(10,0,2),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(5,-15,39),
+		SeatPitch = -4,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(15,-15,8),
+				ang = Angle(0,-90,17)
+			},
+			{
+				pos = Vector(-31,-15,5),
+				ang = Angle(0,-90,12)
+			},
+			{
+				pos = Vector(-31,15,5),
+				ang = Angle(0,-90,12)
+			}
+		
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-105,19,0),
+				ang = Angle(90,165,0),
+				OnBodyGroups = { 
+					[7] = {0},
+				}
+			},
+			{
+				pos = Vector(-32,-38,0),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-36,-38,0),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-32,38,0),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-36,38,0),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 32000,
+		FrontDamping = 1200,
+		FrontRelativeDamping = 800,
+		
+		RearHeight = 8,
+		RearConstant = 32000,
+		RearDamping = 1200,
+		RearRelativeDamping = 800,
+		
+		FastSteeringAngle = 30,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 1.2,
+		
+		MaxGrip = 50,
+		Efficiency = 1,
+		GripOffset = 1.5,
+		BrakePower = 30,
+		
+		IdleRPM = 700,
+		LimitRPM = 5500,
+		PeakTorque = 175,
+		PowerbandStart = 900,
+		PowerbandEnd = 5300,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-60,40,24),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 90,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+
+		
+		Sound_Idle = "mafia2/V8_sport2_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia2/V8_sport2_1.wav",
+		Sound_MidPitch = 1.4,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 80,
+		Sound_MidFadeOutRate = 0.5,
+		
+		Sound_High = "mafia2/V8_sport2_2.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1.5,
+		Sound_HighFadeInRPMpercent = 80,
+		Sound_HighFadeInRate = 0.5,
+		
+		Sound_Throttle = "mafia2/V8_sport2_3.wav",
+		Sound_ThrottlePitch = 1,
+		Sound_ThrottleVolume = 1,
+		
+		--
+		snd_horn = "mafia2/A_klax_Walker_l.wav",
+		
+		DifferentialGear = 0.55,
+		Gears = {-0.12,0,0.1,0.25,0.55}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia2_walker_rocket", V )
