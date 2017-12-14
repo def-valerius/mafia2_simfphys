@@ -2993,10 +2993,10 @@ local V = {
 		
 		TurnSpeed = 1.1,
 		
-		MaxGrip = 80,
+		MaxGrip = 120,
 		Efficiency = 1,
 		GripOffset = 1.5,
-		BrakePower = 40,
+		BrakePower = 60,
 		
 		IdleRPM = 500,
 		LimitRPM = 3900,
@@ -3041,3 +3041,143 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia2_hank_b", V )
+
+local V = {
+	Name = "Hank B Fuel Tank",
+	Model = "models/mafia2/hank_fueltank.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia 2 50s",
+	SpawnOffset = Vector(0,0,0),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 12870,
+		
+		MaxHealth = 1400,
+		
+		EnginePos = Vector(148,0,40),
+		
+		LightsTable = "hank_fueltank",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 1.5,
+		
+		CustomWheelModel = "models/mafia2/hank_f_wheel.mdl",
+		CustomWheelModel_R = "models/mafia2/hank_r_wheel.mdl",
+		CustomWheelPosFL = Vector(156,41,12),
+		CustomWheelPosFR = Vector(156,-41,12),
+		CustomWheelPosML = Vector(-86,38,15),
+		CustomWheelPosMR = Vector(-86,-38,15),
+		CustomWheelPosRL = Vector(-143,38,15),
+		CustomWheelPosRR = Vector(-143,-38,15),
+		CustomWheelAngleOffset = Angle(0,270,0),
+		
+		CustomMassCenter = Vector(10,0,2),
+		
+		CustomSteerAngle = 45,
+		
+		SeatOffset = Vector(74,-19,98),
+		SeatPitch = 5,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(84,-19,60),
+				ang = Angle(0,-90,10)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(64,-43,140),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[8] = {0},
+				}
+			},
+			{
+				pos = Vector(64,-43,140),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[8] = {0},
+				}
+			},
+			{
+				pos = Vector(64,43,140),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[8] = {0},
+				}
+			},
+			{
+				pos = Vector(64,43,140),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[8] = {0},
+				}
+			}
+		},
+		StrengthenSuspension = true,
+		FrontHeight = 8,
+		FrontConstant = 60000,
+		FrontDamping = 3000,
+		FrontRelativeDamping = 2000,
+		
+		RearHeight = 8,
+		RearConstant = 60000,
+		RearDamping = 3000,
+		RearRelativeDamping = 2000,
+		
+		FastSteeringAngle = 42,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 1.1,
+		
+		MaxGrip = 80,
+		Efficiency = 1,
+		GripOffset = 5,
+		BrakePower = 40,
+		
+		IdleRPM = 500,
+		LimitRPM = 3900,
+		PeakTorque = 185,
+		PowerbandStart = 700,
+		PowerbandEnd = 3700,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(15,49,29),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 60,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+
+		
+		Sound_Idle = "mafia2/A_Hank_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia2/A_Hank_1.wav",
+		Sound_MidPitch = 1.4,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 80,
+		Sound_MidFadeOutRate = 0.5,
+		
+		Sound_High = "mafia2/A_Hank_2.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1.5,
+		Sound_HighFadeInRPMpercent = 80,
+		Sound_HighFadeInRate = 0.5,
+		
+		Sound_Throttle = "mafia2/A_Hank_3.wav",
+		Sound_ThrottlePitch = 1,
+		Sound_ThrottleVolume = 1,
+		
+		snd_horn = "mafia2/A_klax_Hank_l.wav",
+		
+		DifferentialGear = 0.5,
+		Gears = {-0.12,0,0.1,0.2,0.39}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia2_hank_fueltank", V )
