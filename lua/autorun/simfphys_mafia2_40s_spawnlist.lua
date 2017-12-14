@@ -3037,3 +3037,299 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia2_smith_truck", V )
+
+local V = {
+	Name = "Walter Utility",
+	Model = "models/mafia2/jeep_civil.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia 2 40s",
+	SpawnOffset = Vector(0,0,20),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1040,
+		
+		EnginePos = Vector(40,0,30),
+		
+		LightsTable = "jeep_civil",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 1.5,
+		CustomWheelModel = "models/mafia2/jeep_wheel.mdl",
+		CustomWheelPosFL = Vector(44,28,-2),
+		CustomWheelPosFR = Vector(44,-28,-2),
+		CustomWheelPosRL = Vector(-39,28,0),
+		CustomWheelPosRR = Vector(-39,-28,0),
+		CustomWheelAngleOffset = Angle(0,270,0),
+		
+		CustomMassCenter = Vector(10,0,5),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-26,-12,40),
+		SeatPitch = 4,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(-17,-15,10),
+				ang = Angle(0,-90,10)
+			}
+		
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-16,-28,3),
+				ang = Angle(90,-165,0),
+				OnBodyGroups = { 
+					[9] = {0},
+				}
+			},
+			{
+				pos = Vector(-15,-31,1),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[9] = {1},
+				}
+			},
+			{
+				pos = Vector(-19,-31,1),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[9] = {1},
+				}
+			},
+			{
+				pos = Vector(-15,31,1),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[9] = {1},
+				}
+			},
+			{
+				pos = Vector(-19,31,1),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[9] = {1},
+				}
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 30000,
+		FrontDamping = 1000,
+		FrontRelativeDamping = 800,
+		
+		RearHeight = 8,
+		RearConstant = 30000,
+		RearDamping = 1000,
+		RearRelativeDamping = 800,
+		
+		FastSteeringAngle = 30,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 1.2,
+		
+		MaxGrip = 37,
+		Efficiency = 1,
+		GripOffset = 1,
+		BrakePower = 18,
+		
+		IdleRPM = 700,
+		LimitRPM = 3600,
+		PeakTorque = 78,
+		PowerbandStart = 800,
+		PowerbandEnd = 3400,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-55,30,18),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 50,
+		
+		PowerBias = 0.4,
+		
+		EngineSoundPreset = 0,
+
+		
+		Sound_Idle = "mafia2/V4_normal1_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia2/V4_normal1_d.wav",
+		Sound_MidPitch = 1.2,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 80,
+		Sound_MidFadeOutRate = 0.5,
+		
+		Sound_High = "mafia2/V4_normal1_1.wav",
+		Sound_HighPitch = 1.4,
+		Sound_HighPitch = 1.4,
+		Sound_HighVolume = 1.5,
+		Sound_HighFadeInRPMpercent = 80,
+		Sound_HighFadeInRate = 0.5,
+		
+		Sound_Throttle = "mafia2/V4_normal1_2.wav",
+		Sound_ThrottlePitch = 1.6,
+		Sound_ThrottleVolume = 1,
+		
+		--
+		snd_horn = "mafia2/A_klax_WalterCoupe_l.wav",
+		
+		DifferentialGear = 0.59,
+		Gears = {-0.12,0,0.1,0.24,0.41}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia2_jeep_civil", V )
+
+local V = {
+	Name = "Walter Military",
+	Model = "models/mafia2/jeep.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia 2 40s",
+	SpawnOffset = Vector(0,0,20),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1041,
+		
+		EnginePos = Vector(40,0,30),
+		
+		LightsTable = "jeep",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 1.5,
+		CustomWheelModel = "models/mafia2/jeep_wheel.mdl",
+		CustomWheelPosFL = Vector(47,28,-2),
+		CustomWheelPosFR = Vector(47,-28,-2),
+		CustomWheelPosRL = Vector(-36,28,0),
+		CustomWheelPosRR = Vector(-36,-28,0),
+		CustomWheelAngleOffset = Angle(0,270,0),
+		
+		CustomMassCenter = Vector(10,0,5),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-23,-12,40),
+		SeatPitch = 4,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(-14,-15,10),
+				ang = Angle(0,-90,10)
+			},
+			{
+				pos = Vector(-47,-15,10),
+				ang = Angle(0,-90,10)
+			},
+			{
+				pos = Vector(-47,13,10),
+				ang = Angle(0,-90,10)
+			},
+		
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-13,-28,3),
+				ang = Angle(90,-165,0),
+				OnBodyGroups = { 
+					[7] = {0},
+				}
+			},
+			{
+				pos = Vector(-12,-31,1),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-16,-31,1),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-12,31,1),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-16,31,1),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 35000,
+		FrontDamping = 1000,
+		FrontRelativeDamping = 800,
+		
+		RearHeight = 8,
+		RearConstant = 35000,
+		RearDamping = 1000,
+		RearRelativeDamping = 800,
+		
+		FastSteeringAngle = 30,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 1.2,
+		
+		MaxGrip = 37,
+		Efficiency = 1,
+		GripOffset = 1,
+		BrakePower = 18,
+		
+		IdleRPM = 700,
+		LimitRPM = 3600,
+		PeakTorque = 78,
+		PowerbandStart = 800,
+		PowerbandEnd = 3400,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-50,30,21),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 60,
+		
+		PowerBias = 0.4,
+		
+		EngineSoundPreset = 0,
+
+		
+		Sound_Idle = "mafia2/V4_normal1_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia2/V4_normal1_d.wav",
+		Sound_MidPitch = 1.2,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 80,
+		Sound_MidFadeOutRate = 0.5,
+		
+		Sound_High = "mafia2/V4_normal1_1.wav",
+		Sound_HighPitch = 1.4,
+		Sound_HighPitch = 1.4,
+		Sound_HighVolume = 1.5,
+		Sound_HighFadeInRPMpercent = 80,
+		Sound_HighFadeInRate = 0.5,
+		
+		Sound_Throttle = "mafia2/V4_normal1_2.wav",
+		Sound_ThrottlePitch = 1.6,
+		Sound_ThrottleVolume = 1,
+		
+		--
+		snd_horn = "mafia2/A_klax_WalterCoupe_l.wav",
+		
+		DifferentialGear = 0.59,
+		Gears = {-0.12,0,0.1,0.24,0.41}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia2_jeep", V )
