@@ -2048,3 +2048,146 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia2_smith_mainline_pha", V )
+
+local V = {
+	Name = "Smith Thunderbolt",
+	Model = "models/mafia2/smith_stingray_pha.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia 2 50s",
+	SpawnOffset = Vector(0,0,20),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1352,
+		
+		EnginePos = Vector(55,0,20),
+		
+		LightsTable = "smith_stingray_pha",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 1.5,
+		
+		CustomWheelModel = "models/mafia2/galahad_silver_band.mdl",
+		CustomWheelPosFL = Vector(64,29,2),
+		CustomWheelPosFR = Vector(64,-29,2),
+		CustomWheelPosRL = Vector(-49,29,4),
+		CustomWheelPosRR = Vector(-49,-29,4),
+		CustomWheelAngleOffset = Angle(0,270,0),
+		
+		CustomMassCenter = Vector(10,0,1),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-14,-13,35),
+		SeatPitch = -13,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(-9,-15,2),
+				ang = Angle(0,-90,22)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-96,10,0),
+				ang = Angle(90,165,0),
+				OnBodyGroups = { 
+					[7] = {0},
+				}
+			},
+			{
+				pos = Vector(-25,-38,-1),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-28,-38,-1),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-25,38,-1),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-28,38,-1),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 24000,
+		FrontDamping = 1000,
+		FrontRelativeDamping = 800,
+		
+		RearHeight = 8,
+		RearConstant = 24000,
+		RearDamping = 1000,
+		RearRelativeDamping = 800,
+		
+		FastSteeringAngle = 30,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 1.2,
+		
+		MaxGrip = 42,
+		Efficiency = 1,
+		GripOffset = 1.5,
+		BrakePower = 25,
+		
+		IdleRPM = 700,
+		LimitRPM = 5300,
+		PeakTorque = 160,
+		PowerbandStart = 900,
+		PowerbandEnd = 5100,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-53,35,26),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 79,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+
+		
+		Sound_Idle = "mafia2/V8_sport2_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia2/V8_sport2_1.wav",
+		Sound_MidPitch = 1.4,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 80,
+		Sound_MidFadeOutRate = 0.5,
+		
+		Sound_High = "mafia2/V8_sport2_2.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1.5,
+		Sound_HighFadeInRPMpercent = 80,
+		Sound_HighFadeInRate = 0.5,
+		
+		Sound_Throttle = "mafia2/V8_sport2_3.wav",
+		Sound_ThrottlePitch = 1,
+		Sound_ThrottleVolume = 1,
+		
+		--
+		snd_horn = "mafia2/A_klax_SmithStingray_l.wav",
+		
+		DifferentialGear = 0.55,
+		Gears = {-0.12,0,0.1,0.24,0.55}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia2_smith_stingray_pha", V )
