@@ -2493,3 +2493,146 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia2_hot_rod_1", V )
+
+local V = {
+	Name = "Milk Truck",
+	Model = "models/mafia2/milk_truck.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia 2 50s",
+	SpawnOffset = Vector(0,0,20),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 2430,
+		
+		EnginePos = Vector(60,0,20),
+		
+		LightsTable = "milk_truck",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 1.5,
+		
+		CustomWheelModel = "models/mafia2/speedstone_top_speed.mdl",
+		CustomWheelPosFL = Vector(45,30,2),
+		CustomWheelPosFR = Vector(45,-30,2),
+		CustomWheelPosRL = Vector(-53,30,4),
+		CustomWheelPosRR = Vector(-53,-30,4),
+		CustomWheelAngleOffset = Angle(0,270,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(0,-12,59),
+		SeatPitch = 5,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(-15,-15,8),
+				ang = Angle(0,-90,30)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-82,8,4),
+				ang = Angle(90,165,0),
+				OnBodyGroups = { 
+					[8] = {0},
+				}
+			},
+			{
+				pos = Vector(-26,-38,3),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[8] = {1},
+				}
+			},
+			{
+				pos = Vector(-31,-38,3),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[8] = {1},
+				}
+			},
+			{
+				pos = Vector(-26,38,3),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[8] = {1},
+				}
+			},
+			{
+				pos = Vector(-31,38,3),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[8] = {1},
+				}
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 35000,
+		FrontDamping = 1800,
+		FrontRelativeDamping = 1200,
+		
+		RearHeight = 8,
+		RearConstant = 35000,
+		RearDamping = 1800,
+		RearRelativeDamping = 1200,
+		
+		FastSteeringAngle = 30,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 1.2,
+		
+		MaxGrip = 50,
+		Efficiency = 1,
+		GripOffset = 1.5,
+		BrakePower = 30,
+		
+		IdleRPM = 700,
+		LimitRPM = 4600,
+		PeakTorque = 110,
+		PowerbandStart = 900,
+		PowerbandEnd = 4400,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-66,34,32),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 90,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+
+		
+		Sound_Idle = "mafia2/V6_40_normal_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia2/V6_40_normal_1.wav",
+		Sound_MidPitch = 1.4,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 80,
+		Sound_MidFadeOutRate = 0.5,
+		
+		Sound_High = "mafia2/V6_40_normal_2.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1.5,
+		Sound_HighFadeInRPMpercent = 80,
+		Sound_HighFadeInRate = 0.5,
+		
+		Sound_Throttle = "mafia2/V6_40_normal_3.wav",
+		Sound_ThrottlePitch = 1,
+		Sound_ThrottleVolume = 1,
+		
+		--
+		snd_horn = "mafia2/A_klax_SmithWagon_l.wav",
+		//snd_horn = "mafia2/A_klax_generallee.wav",
+		DifferentialGear = 0.48,
+		Gears = {-0.12,0,0.1,0.21,0.42}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia2_milk_truck", V )
