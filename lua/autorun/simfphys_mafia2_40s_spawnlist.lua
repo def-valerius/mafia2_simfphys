@@ -3333,3 +3333,154 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia2_jeep", V )
+
+local V = {
+	Name = "Cossack",
+	Model = "models/mafia2/trautenberg_grande.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia 2 40s",
+	SpawnOffset = Vector(0,0,20),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 2400,
+		
+		EnginePos = Vector(60,0,20),
+		
+		LightsTable = "trautenberg_grande",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 1.5,
+		CustomWheelModel = "models/mafia2/speedstone_top_speed.mdl",
+		CustomWheelPosFL = Vector(89,34,-2),
+		CustomWheelPosFR = Vector(89,-34,-2),
+		CustomWheelPosRL = Vector(-65,34,0),
+		CustomWheelPosRR = Vector(-65,-34,0),
+		CustomWheelAngleOffset = Angle(0,270,0),
+		
+		CustomMassCenter = Vector(10,0,5),
+		
+		CustomSteerAngle = 35,
+		
+		SeatOffset = Vector(-9,-12,45),
+		SeatPitch = -4,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(-1,-12,9),
+				ang = Angle(0,-90,17)
+			},
+			{
+				pos = Vector(-37,-14,9),
+				ang = Angle(0,-90,12)
+			},
+			{
+				pos = Vector(-37,14,9),
+				ang = Angle(0,-90,12)
+			}
+		
+		},
+		
+		ExhaustPositions = {
+						{
+				pos = Vector(-92,12,0),
+				ang = Angle(90,165,0),
+				OnBodyGroups = { 
+					[7] = {0},
+				}
+			},
+			{
+				pos = Vector(-30,-36,-2),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-33,-36,-2),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-30,36,-2),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-33,36,-2),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 27000,
+		FrontDamping = 1200,
+		FrontRelativeDamping = 800,
+		
+		RearHeight = 8,
+		RearConstant = 27000,
+		RearDamping = 1200,
+		RearRelativeDamping = 800,
+		
+		FastSteeringAngle = 33,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 1.2,
+		
+		MaxGrip = 70,
+		Efficiency = 1,
+		GripOffset = 1.5,
+		BrakePower = 35,
+		
+		IdleRPM = 700,
+		LimitRPM = 4700,
+		PeakTorque = 250,
+		PowerbandStart = 900,
+		PowerbandEnd = 4500,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-68,32,28),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 80,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+
+		
+		Sound_Idle = "mafia2/V8_sport2_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia2/V8_sport2_1.wav",
+		Sound_MidPitch = 1.2,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 80,
+		Sound_MidFadeOutRate = 0.5,
+		
+		Sound_High = "mafia2/V8_sport2_2.wav",
+		Sound_HighPitch = 1.2,
+		Sound_HighVolume = 1.5,
+		Sound_HighFadeInRPMpercent = 80,
+		Sound_HighFadeInRate = 0.5,
+		
+		Sound_Throttle = "mafia2/V8_sport2_3.wav",
+		Sound_ThrottlePitch = 1.2,
+		Sound_ThrottleVolume = 1,
+		
+		--
+		snd_horn = "mafia2/A_klax_JeffProvincial_l.wav",
+		
+		DifferentialGear = 0.55,
+		Gears = {-0.12,0,0.12,0.25,0.57,}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia2_trautenberg_grande", V )
