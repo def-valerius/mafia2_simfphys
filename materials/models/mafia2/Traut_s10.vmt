@@ -1,11 +1,9 @@
 "VertexlitGeneric"
 {
-	"$basetexture" "models/mafia2/snow"
-	"$bumpmap" "models/mafia2/snow_n"
+	"$basetexture" "models/mafia2/Traut"
+	"$bumpmap" "models/mafia2/Traut_n"
 	"$nocull" "1"
-	"$alphatest" "1"
-	"vertexaplha" "1"
-	"$colorfix" "{255 255 255}"
+	"$colorfix" "{90 0 0}"
 	"Proxies"
 	{
 		"Equals"
@@ -17,11 +15,11 @@
 	"$rimlight" "1"
 	"$rimlightboost" "0.5"
 	"$envmap" "env_cubemap"
-	"$envmaptint" "[0.2 0.2 0.2]"
+	"$envmaptint" "[0.08 0.08 0.08]"
 	"$normalmapalphaenvmapmask" "1"
 	"$phong" "1"
 	"$phongexponent" "5"
-	"$phongboost" "0.8"
+	"$phongboost" "1"
 	"$phongfresnelranges" "[1 1 1]"
 	"$phongfix" "{1 1 1}"
 	Proxies
