@@ -3331,3 +3331,153 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia2_shubert_armoured", V )
+
+local V = {
+	Name = "Roller GL300",
+	Model = "models/mafia2/roller.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia 2 50s",
+	SpawnOffset = Vector(0,0,20),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1250,
+		
+		EnginePos = Vector(50,0,20),
+		
+		LightsTable = "roller",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 1.5,
+		
+		CustomWheelModel = "models/mafia2/speedstone_beta.mdl",
+		CustomWheelPosFL = Vector(63,34,6),
+		CustomWheelPosFR = Vector(63,-34,6),
+		CustomWheelPosRL = Vector(-42,34,8),
+		CustomWheelPosRR = Vector(-42,-34,8),
+		CustomWheelAngleOffset = Angle(0,270,0),
+		
+		CustomMassCenter = Vector(10,0,2),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-14,-15,36),
+		SeatPitch = -9,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(-4,-15,3),
+				ang = Angle(0,-90,25)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-93,-18,4),
+				ang = Angle(90,165,0),
+				OnBodyGroups = { 
+					[7] = {0},
+				}
+			},
+			{
+				pos = Vector(-93,18,4),
+				ang = Angle(90,165,0),
+				OnBodyGroups = { 
+					[7] = {0},
+				}
+			},
+			{
+				pos = Vector(-14,-33,-1),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-17,-33,-1),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-14,33,-1),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-17,33,-1),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 26000,
+		FrontDamping = 1000,
+		FrontRelativeDamping = 800,
+		
+		RearHeight = 8,
+		RearConstant = 26000,
+		RearDamping = 1000,
+		RearRelativeDamping = 800,
+		
+		FastSteeringAngle = 30,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 1.2,
+		
+		MaxGrip = 50,
+		Efficiency = 1,
+		GripOffset = 1.5,
+		BrakePower = 30,
+		
+		IdleRPM = 700,
+		LimitRPM = 5700,
+		PeakTorque = 170,
+		PowerbandStart = 900,
+		PowerbandEnd = 5400,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-64,36,27),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 78,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+
+		
+		Sound_Idle = "mafia2/V8_sport3_1.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia2/V8_sport3_2.wav",
+		Sound_MidPitch = 1,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 80,
+		Sound_MidFadeOutRate = 0.5,
+		
+		Sound_High = "mafia2/V8_sport3_3.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1.5,
+		Sound_HighFadeInRPMpercent = 80,
+		Sound_HighFadeInRate = 0.5,
+		
+		Sound_Throttle = "mafia2/V8_sport3_4.wav",
+		Sound_ThrottlePitch = 1,
+		Sound_ThrottleVolume = 1,
+		
+		--
+		snd_horn = "mafia2/A_klax_ISW_l.wav",
+		
+		DifferentialGear = 0.5,
+		Gears = {-0.12,0,0.1,0.22,0.37,0.57}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia2_roller", V )
