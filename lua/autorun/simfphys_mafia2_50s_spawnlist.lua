@@ -3782,3 +3782,146 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia2_shubert_chaffeque", V )
+
+local V = {
+	Name = "Jefferson Futura",
+	Model = "models/mafia2/Jeffut.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia 2 50s",
+	SpawnOffset = Vector(0,0,20),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 2475,
+		
+		EnginePos = Vector(70,0,20),
+		
+		LightsTable = "Jeffut",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 1.5,
+		
+		CustomWheelModel = "models/mafia2/galahad_silver_band.mdl",
+		CustomWheelPosFL = Vector(76,35,1),
+		CustomWheelPosFR = Vector(76,-35,1),
+		CustomWheelPosRL = Vector(-54,35,3),
+		CustomWheelPosRR = Vector(-54,-35,3),
+		CustomWheelAngleOffset = Angle(0,270,0),
+		
+		CustomMassCenter = Vector(10,0,2),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-2,-19,33),
+		SeatPitch = -5,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(8,-19,4),
+				ang = Angle(0,-90,23)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-98,15,1),
+				ang = Angle(90,165,0),
+				OnBodyGroups = { 
+					[7] = {0},
+				}
+			},
+			{
+				pos = Vector(-18,-40,-1),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-21,-40,-1),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-18,40,-1),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-21,40,-1),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 40000,
+		FrontDamping = 2000,
+		FrontRelativeDamping = 1000,
+		
+		RearHeight = 8,
+		RearConstant = 40000,
+		RearDamping = 2000,
+		RearRelativeDamping = 1000,
+		
+		FastSteeringAngle = 30,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 1.2,
+		
+		MaxGrip = 75,
+		Efficiency = 1,
+		GripOffset = 1.5,
+		BrakePower = 36,
+		
+		IdleRPM = 700,
+		LimitRPM = 5700,
+		PeakTorque = 215,
+		PowerbandStart = 900,
+		PowerbandEnd = 5400,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-63,41,23),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 70,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+
+		
+		Sound_Idle = "mafia2/V8_sport2_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia2/V8_sport2_1.wav",
+		Sound_MidPitch = 1.4,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 80,
+		Sound_MidFadeOutRate = 0.5,
+		
+		Sound_High = "mafia2/V8_sport2_2.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1.5,
+		Sound_HighFadeInRPMpercent = 80,
+		Sound_HighFadeInRate = 0.5,
+		
+		Sound_Throttle = "mafia2/V8_sport2_3.wav",
+		Sound_ThrottlePitch = 1,
+		Sound_ThrottleVolume = 1,
+		
+		--
+		snd_horn = "mafia2/A_klax_JeffFutura_l.wav",
+		
+		DifferentialGear = 0.54,
+		Gears = {-0.12,0,0.1,0.24,0.56}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia2_Jeffut", V )
