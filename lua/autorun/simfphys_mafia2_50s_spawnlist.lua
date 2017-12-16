@@ -3631,3 +3631,154 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia2_shubert_elysium", V )
+
+local V = {
+	Name = "Chaffeque XT",
+	Model = "models/mafia2/chaffeque.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia 2 50s",
+	SpawnOffset = Vector(0,0,20),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1120,
+		
+		EnginePos = Vector(50,0,20),
+		
+		LightsTable = "chaffeque",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 1.5,
+		
+		CustomWheelModel = "models/mafia2/dunniel_black_rook.mdl",
+		CustomWheelPosFL = Vector(57,28,6),
+		CustomWheelPosFR = Vector(57,-28,6),
+		CustomWheelPosRL = Vector(-70,25,8),
+		CustomWheelPosRR = Vector(-70,-25,8),
+		CustomWheelAngleOffset = Angle(0,270,0),
+		
+		CustomMassCenter = Vector(10,0,1),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-4,-16,38),
+		SeatPitch = -4,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(4,-16,5),
+				ang = Angle(0,-90,17)
+			},
+			{
+				pos = Vector(-32,-16,5),
+				ang = Angle(0,-90,17)
+			},
+			{
+				pos = Vector(-32,16,5),
+				ang = Angle(0,-90,17)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-95,29,7),
+				ang = Angle(90,135,0),
+				OnBodyGroups = { 
+					[7] = {0},
+				}
+			},
+			{
+				pos = Vector(-42,-34,2),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-45,-34,2),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-42,34,2),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-45,34,2),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 24000,
+		FrontDamping = 1000,
+		FrontRelativeDamping = 800,
+		
+		RearHeight = 8,
+		RearConstant = 24000,
+		RearDamping = 1000,
+		RearRelativeDamping = 800,
+		
+		FastSteeringAngle = 30,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 1.2,
+		
+		MaxGrip = 42,
+		Efficiency = 1,
+		GripOffset = 1.5,
+		BrakePower = 23,
+		
+		IdleRPM = 700,
+		LimitRPM = 4200,
+		PeakTorque = 80,
+		PowerbandStart = 900,
+		PowerbandEnd = 4000,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-70,30,27),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 70,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+
+		
+		Sound_Idle = "mafia2/V4_sport1_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia2/V4_sport1_d.wav",
+		Sound_MidPitch = 1.4,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 80,
+		Sound_MidFadeOutRate = 0.5,
+		
+		Sound_High = "mafia2/V4_sport1_2.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1.5,
+		Sound_HighFadeInRPMpercent = 80,
+		Sound_HighFadeInRate = 0.5,
+		
+		Sound_Throttle = "mafia2/V4_sport1_3.wav",
+		Sound_ThrottlePitch = 1,
+		Sound_ThrottleVolume = 1,
+		
+		--
+		snd_horn = "mafia2/A_klax_ShubFrigate_l.wav",
+		
+		DifferentialGear = 0.5,
+		Gears = {-0.12,0,0.1,0.22,0.38,0.53}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia2_shubert_chaffeque", V )
