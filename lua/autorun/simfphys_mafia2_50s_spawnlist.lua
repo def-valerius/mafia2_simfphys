@@ -3481,3 +3481,153 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia2_roller", V )
+
+local V = {
+	Name = "Potomac Elysium",
+	Model = "models/mafia2/elysium.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia 2 50s",
+	SpawnOffset = Vector(0,0,20),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1120,
+		
+		EnginePos = Vector(50,0,20),
+		
+		LightsTable = "elysium",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 1.5,
+		
+		CustomWheelModel = "models/mafia2/galahad_silver_band.mdl",
+		CustomWheelPosFL = Vector(60,31,6),
+		CustomWheelPosFR = Vector(60,-31,6),
+		CustomWheelPosRL = Vector(-47,31,8),
+		CustomWheelPosRR = Vector(-47,-31,8),
+		CustomWheelAngleOffset = Angle(0,270,0),
+		
+		CustomMassCenter = Vector(10,0,1),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-11,-17,32),
+		SeatPitch = -9,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(-2,-17,-1),
+				ang = Angle(0,-90,25)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-91,15,5),
+				ang = Angle(90,165,0),
+				OnBodyGroups = { 
+					[7] = {0},
+				}
+			},
+			{
+				pos = Vector(-91,-15,5),
+				ang = Angle(90,165,0),
+				OnBodyGroups = { 
+					[7] = {0},
+				}
+			},
+			{
+				pos = Vector(-28,-38,-1),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-31,-38,-1),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-28,38,-1),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-31,38,-1),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 24000,
+		FrontDamping = 1000,
+		FrontRelativeDamping = 800,
+		
+		RearHeight = 8,
+		RearConstant = 24000,
+		RearDamping = 1000,
+		RearRelativeDamping = 800,
+		
+		FastSteeringAngle = 30,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 1.2,
+		
+		MaxGrip = 42,
+		Efficiency = 1,
+		GripOffset = 1.5,
+		BrakePower = 25,
+		
+		IdleRPM = 700,
+		LimitRPM = 5900,
+		PeakTorque = 245,
+		PowerbandStart = 900,
+		PowerbandEnd = 5500,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-46,35,23),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 70,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+
+		
+		Sound_Idle = "mafia2/V8_sport2_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia2/V8_sport2_1.wav",
+		Sound_MidPitch = 1.4,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 80,
+		Sound_MidFadeOutRate = 0.5,
+		
+		Sound_High = "mafia2/V8_sport2_2.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1.5,
+		Sound_HighFadeInRPMpercent = 80,
+		Sound_HighFadeInRate = 0.5,
+		
+		Sound_Throttle = "mafia2/V8_sport2_3.wav",
+		Sound_ThrottlePitch = 1,
+		Sound_ThrottleVolume = 1,
+		
+		--
+		snd_horn = "mafia2/A_klax_ShubFrigate_l.wav",
+		
+		DifferentialGear = 0.62,
+		Gears = {-0.12,0,0.1,0.24,0.56}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia2_shubert_elysium", V )
