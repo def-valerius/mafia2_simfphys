@@ -3775,7 +3775,7 @@ local V = {
 		Sound_ThrottleVolume = 1,
 		
 		--
-		snd_horn = "mafia2/A_klax_ShubFrigate_l.wav",
+		snd_horn = "mafia2/A_klax_ISW_l.wav",
 		
 		DifferentialGear = 0.5,
 		Gears = {-0.12,0,0.1,0.22,0.38,0.53}
