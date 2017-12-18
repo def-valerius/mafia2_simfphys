@@ -22,7 +22,7 @@ local V = {
 		CustomWheelPosRR = Vector(-59,-32,2),
 		CustomWheelAngleOffset = Angle(0,270,0),
 		
-		CustomMassCenter = Vector(10,0,5),
+		CustomMassCenter = Vector(10,0,2),
 		
 		CustomSteerAngle = 30,
 		
@@ -173,7 +173,7 @@ local V = {
 		CustomWheelPosRR = Vector(-59,-32,2),
 		CustomWheelAngleOffset = Angle(0,270,0),
 		
-		CustomMassCenter = Vector(10,0,5),
+		CustomMassCenter = Vector(10,0,2),
 		
 		CustomSteerAngle = 30,
 		
@@ -324,7 +324,7 @@ local V = {
 		CustomWheelPosRR = Vector(-59,-29,2),
 		CustomWheelAngleOffset = Angle(0,270,0),
 		
-		CustomMassCenter = Vector(10,0,5),
+		CustomMassCenter = Vector(10,0,2),
 		
 		CustomSteerAngle = 30,
 		
@@ -626,7 +626,7 @@ local V = {
 		CustomWheelPosRR = Vector(-54,-31,11),
 		CustomWheelAngleOffset = Angle(0,270,0),
 		
-		CustomMassCenter = Vector(10,0,5),
+		CustomMassCenter = Vector(10,0,2),
 		
 		CustomSteerAngle = 30,
 		
@@ -777,7 +777,7 @@ local V = {
 		CustomWheelPosRR = Vector(-51,-31,11),
 		CustomWheelAngleOffset = Angle(0,270,0),
 		
-		CustomMassCenter = Vector(10,0,5),
+		CustomMassCenter = Vector(10,0,2),
 		
 		CustomSteerAngle = 30,
 		
@@ -928,7 +928,7 @@ local V = {
 		CustomWheelPosRR = Vector(-77,-31,8),
 		CustomWheelAngleOffset = Angle(0,270,0),
 		
-		CustomMassCenter = Vector(10,0,5),
+		CustomMassCenter = Vector(10,0,2),
 		
 		CustomSteerAngle = 30,
 		
@@ -1070,7 +1070,7 @@ local V = {
 		CustomWheelPosRR = Vector(-61,-31,6),
 		CustomWheelAngleOffset = Angle(0,270,0),
 		
-		CustomMassCenter = Vector(10,0,5),
+		CustomMassCenter = Vector(10,0,2),
 		
 		CustomSteerAngle = 30,
 		
@@ -1212,7 +1212,7 @@ local V = {
 		CustomWheelPosRR = Vector(-62,-31,14),
 		CustomWheelAngleOffset = Angle(0,270,0),
 		
-		CustomMassCenter = Vector(10,0,5),
+		CustomMassCenter = Vector(10,0,2),
 		
 		CustomSteerAngle = 30,
 		
@@ -1287,7 +1287,7 @@ local V = {
 		FastSteeringAngle = 30,
 		SteeringFadeFastSpeed = 535,
 		
-		TurnSpeed = 1.2,
+		TurnSpeed = 1,
 		
 		MaxGrip = 40,
 		Efficiency = 1,
@@ -1439,7 +1439,7 @@ local V = {
 		
 		IdleRPM = 700,
 		LimitRPM = 4000,
-		PeakTorque = 80,
+		PeakTorque = 75,
 		PowerbandStart = 800,
 		PowerbandEnd = 3800,
 		Turbocharged = false,
@@ -1506,7 +1506,7 @@ local V = {
 		CustomWheelPosRR = Vector(-62,-32,13),
 		CustomWheelAngleOffset = Angle(0,270,0),
 		
-		CustomMassCenter = Vector(10,0,5),
+		CustomMassCenter = Vector(10,0,3),
 		
 		CustomSteerAngle = 30,
 		
@@ -2065,7 +2065,7 @@ local V = {
 		CustomWheelPosRR = Vector(-68,-25,2),
 		CustomWheelAngleOffset = Angle(0,270,0),
 		
-		CustomMassCenter = Vector(10,0,5),
+		CustomMassCenter = Vector(10,0,2),
 		
 		CustomSteerAngle = 35,
 		
@@ -2595,7 +2595,7 @@ local V = {
 		CustomWheelPosRR = Vector(-68,-32,5),
 		CustomWheelAngleOffset = Angle(0,270,0),
 		
-		CustomMassCenter = Vector(10,0,5),
+		CustomMassCenter = Vector(10,0,3),
 		
 		CustomSteerAngle = 35,
 		
@@ -2623,13 +2623,13 @@ local V = {
 		
 		FrontHeight = 8,
 		FrontConstant = 50000,
-		FrontDamping = 2000,
-		FrontRelativeDamping = 1000,
+		FrontDamping = 2700,
+		FrontRelativeDamping = 2000,
 		
 		RearHeight = 8,
 		RearConstant = 50000,
-		RearDamping = 2000,
-		RearRelativeDamping = 1000,
+		RearDamping = 2700,
+		RearRelativeDamping = 2000,
 		
 		FastSteeringAngle = 35,
 		SteeringFadeFastSpeed = 535,
@@ -2712,7 +2712,7 @@ local V = {
 		CustomWheelPosRR = Vector(-63,-32,5),
 		CustomWheelAngleOffset = Angle(0,270,0),
 		
-		CustomMassCenter = Vector(10,0,5),
+		CustomMassCenter = Vector(10,0,3),
 		
 		CustomSteerAngle = 35,
 		
@@ -2740,13 +2740,13 @@ local V = {
 		
 		FrontHeight = 8,
 		FrontConstant = 50000,
-		FrontDamping = 2000,
-		FrontRelativeDamping = 1000,
+		FrontDamping = 2700,
+		FrontRelativeDamping = 2000,
 		
 		RearHeight = 8,
 		RearConstant = 50000,
-		RearDamping = 2000,
-		RearRelativeDamping = 1000,
+		RearDamping = 2700,
+		RearRelativeDamping = 2000,
 		
 		FastSteeringAngle = 35,
 		SteeringFadeFastSpeed = 535,
@@ -2829,7 +2829,7 @@ local V = {
 		CustomWheelPosRR = Vector(-56,-32,5),
 		CustomWheelAngleOffset = Angle(0,270,0),
 		
-		CustomMassCenter = Vector(10,0,5),
+		CustomMassCenter = Vector(10,0,3),
 		
 		CustomSteerAngle = 35,
 		
@@ -2857,13 +2857,13 @@ local V = {
 		
 		FrontHeight = 8,
 		FrontConstant = 50000,
-		FrontDamping = 2000,
-		FrontRelativeDamping = 1000,
+		FrontDamping = 2700,
+		FrontRelativeDamping = 2000,
 		
 		RearHeight = 8,
 		RearConstant = 50000,
-		RearDamping = 2000,
-		RearRelativeDamping = 1000,
+		RearDamping = 2700,
+		RearRelativeDamping = 2000,
 		
 		FastSteeringAngle = 35,
 		SteeringFadeFastSpeed = 535,
@@ -2946,7 +2946,7 @@ local V = {
 		CustomWheelPosRR = Vector(-76,-28,-3),
 		CustomWheelAngleOffset = Angle(0,270,0),
 		
-		CustomMassCenter = Vector(10,0,5),
+		CustomMassCenter = Vector(10,0,2),
 		
 		CustomSteerAngle = 35,
 		
@@ -3358,7 +3358,7 @@ local V = {
 		CustomWheelPosRR = Vector(-65,-34,0),
 		CustomWheelAngleOffset = Angle(0,270,0),
 		
-		CustomMassCenter = Vector(10,0,5),
+		CustomMassCenter = Vector(10,0,3),
 		
 		CustomSteerAngle = 35,
 		
