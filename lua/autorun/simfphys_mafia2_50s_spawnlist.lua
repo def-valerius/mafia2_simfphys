@@ -4075,3 +4075,120 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia2_delizia_grandeamerica", V )
+
+local V = {
+	Name = "Waybar Hot Rod",
+	Model = "models/mafia2/waybar.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia 2 50s",
+	SpawnOffset = Vector(0,0,20),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1130,
+		
+		EnginePos = Vector(45,0,20),
+		
+		LightsTable = "waybar",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 1.5,
+		
+		CustomWheelModel = "models/mafia2/speedstone_pacific.mdl",
+		CustomWheelModel_R = "models/mafia2/speedstone_pacific_hotrod.mdl",
+		CustomWheelPosFL = Vector(62,32,6),
+		CustomWheelPosFR = Vector(62,-32,6),
+		CustomWheelPosRL = Vector(-51,32,6),
+		CustomWheelPosRR = Vector(-51,-32,6),
+		CustomWheelAngleOffset = Angle(0,270,0),
+		
+		CustomMassCenter = Vector(10,0,1),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-18,-10,38),
+		SeatPitch = -9,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(-12,-10,4),
+				ang = Angle(0,-90,25)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-12,28,1),
+				ang = Angle(90,165,0)
+			},
+			{
+				pos = Vector(-12,-28,1),
+				ang = Angle(90,-165,0)
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 30000,
+		FrontDamping = 1000,
+		FrontRelativeDamping = 800,
+		
+		RearHeight = 8,
+		RearConstant = 32000,
+		RearDamping = 1000,
+		RearRelativeDamping = 800,
+		
+		FastSteeringAngle = 30,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 1.6,
+		
+		MaxGrip = 42,
+		Efficiency = 1,
+		GripOffset = 1.5,
+		BrakePower = 25,
+		
+		IdleRPM = 700,
+		LimitRPM = 5600,
+		PeakTorque = 230,
+		PowerbandStart = 900,
+		PowerbandEnd = 5400,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-50,30,23),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 45,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+
+		
+		Sound_Idle = "mafia2/V8_hotrod2_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia2/V8_hotrod2_1.wav",
+		Sound_MidPitch = 1.2,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 80,
+		Sound_MidFadeOutRate = 0.5,
+		
+		Sound_High = "mafia2/V8_hotrod2_2.wav",
+		Sound_HighPitch = 0.9,
+		Sound_HighVolume = 1.5,
+		Sound_HighFadeInRPMpercent = 80,
+		Sound_HighFadeInRate = 0.5,
+		
+		Sound_Throttle = "mafia2/V8_hotrod2_3.wav",
+		Sound_ThrottlePitch = 1,
+		Sound_ThrottleVolume = 1,
+		
+		--
+		snd_horn = "mafia2/A_klax_Shubert38_l.wav",
+		
+		DifferentialGear = 0.57,
+		Gears = {-0.12,0,0.1,0.26,0.57}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia2_waybar", V )
