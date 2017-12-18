@@ -3925,3 +3925,153 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia2_Jeffut", V )
+
+local V = {
+	Name = "Delizia Grandeamerica",
+	Model = "models/mafia2/delizia_grandeamerica.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia 2 50s",
+	SpawnOffset = Vector(0,0,20),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1200,
+		
+		EnginePos = Vector(50,0,20),
+		
+		LightsTable = "delizia_grandeamerica",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 1.5,
+		
+		CustomWheelModel = "models/mafia2/speedstone_beta.mdl",
+		CustomWheelPosFL = Vector(53,34,7),
+		CustomWheelPosFR = Vector(53,-34,7),
+		CustomWheelPosRL = Vector(-63,34,9),
+		CustomWheelPosRR = Vector(-63,-34,9),
+		CustomWheelAngleOffset = Angle(0,270,0),
+		
+		CustomMassCenter = Vector(10,0,1),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-25,-19,35),
+		SeatPitch = -5,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(-16,-17,4),
+				ang = Angle(0,-90,23)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-98,13,4),
+				ang = Angle(90,165,0),
+				OnBodyGroups = { 
+					[7] = {0},
+				}
+			},
+			{
+				pos = Vector(-98,17,4),
+				ang = Angle(90,165,0),
+				OnBodyGroups = { 
+					[7] = {0},
+				}
+			},
+			{
+				pos = Vector(-28,-40,-1),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-31,-40,-1),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-28,40,-1),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			},
+			{
+				pos = Vector(-31,40,-1),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[7] = {1},
+				}
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 30000,
+		FrontDamping = 1200,
+		FrontRelativeDamping = 1000,
+		
+		RearHeight = 8,
+		RearConstant = 30000,
+		RearDamping = 1200,
+		RearRelativeDamping = 1000,
+		
+		FastSteeringAngle = 30,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 1.2,
+		
+		MaxGrip = 54,
+		Efficiency = 1,
+		GripOffset = 1.5,
+		BrakePower = 30,
+		
+		IdleRPM = 700,
+		LimitRPM = 6100,
+		PeakTorque = 185,
+		PowerbandStart = 900,
+		PowerbandEnd = 5800,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-63,41,27),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 70,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+
+		
+		Sound_Idle = "mafia2/V8_sport3_1.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia2/V8_sport3_2.wav",
+		Sound_MidPitch = 1.1,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 80,
+		Sound_MidFadeOutRate = 0.5,
+		
+		Sound_High = "mafia2/V8_sport3_3.wav",
+		Sound_HighPitch = 0.8,
+		Sound_HighVolume = 1.5,
+		Sound_HighFadeInRPMpercent = 80,
+		Sound_HighFadeInRate = 0.5,
+		
+		Sound_Throttle = "mafia2/V8_sport3_4.wav",
+		Sound_ThrottlePitch = 1,
+		Sound_ThrottleVolume = 1,
+		
+		--
+		snd_horn = "mafia2/A_klax_Delizia_l.wav",
+		
+		DifferentialGear = 0.58,
+		Gears = {-0.12,0,0.1,0.21,0.36,0.58}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia2_delizia_grandeamerica", V )
