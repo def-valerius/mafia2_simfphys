@@ -3,7 +3,7 @@
 	"$basetexture" "models/mafia2/hank_s"
 	"$bumpmap" "models/mafia2/hank_n"
 	"$nocull" "1"
-	"$colorfix" "{0 0 255}"
+	"$colorfix" "{0 80 0}"
 	"Proxies"
 	{
 		"Equals"

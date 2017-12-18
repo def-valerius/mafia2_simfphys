@@ -3,7 +3,7 @@
 	"$basetexture" "models/mafia2/hot_rod_2_s"
 	"$bumpmap" "models/mafia2/Hot_Rod_2_n"
 	"$nocull" "1"
-	"$colorfix" "{255 150 0}"
+	"$colorfix" "{0 0 80}"
 	"Proxies"
 	{
 		"Equals"

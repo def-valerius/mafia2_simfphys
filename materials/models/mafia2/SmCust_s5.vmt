@@ -3,7 +3,7 @@
 	"$basetexture" "models/mafia2/SmCust"
 	"$bumpmap" "models/mafia2/SmCust_n"
 	"$nocull" "1"
-	"$colorfix" "{0 255 0}"
+	"$colorfix" "{0 190 0}"
 	"Proxies"
 	{
 		"Equals"

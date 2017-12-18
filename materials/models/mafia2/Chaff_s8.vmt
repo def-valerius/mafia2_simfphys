@@ -1,9 +1,9 @@
 "VertexlitGeneric"
 {
-	"$basetexture" "models/mafia2/Chaff_s"
+	"$basetexture" "models/mafia2/Chaff"
 	"$bumpmap" "models/mafia2/Chaff_n"
 	"$nocull" "1"
-	"$colorfix" "{255 150 0}"
+	"$colorfix" "{0 0 80}"
 	"Proxies"
 	{
 		"Equals"
