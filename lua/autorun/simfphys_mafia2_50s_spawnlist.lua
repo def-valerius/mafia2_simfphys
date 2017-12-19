@@ -1200,7 +1200,7 @@ local V = {
 		CustomWheelPosRR = Vector(-52,-30,4),
 		CustomWheelAngleOffset = Angle(0,270,0),
 		
-		CustomMassCenter = Vector(10,0,2),
+		CustomMassCenter = Vector(10,0,1),
 		
 		CustomSteerAngle = 30,
 		
